@@ -1,0 +1,4175 @@
+/*
+	Theme Name: Cam-Beta-Micro
+	Theme URI: https://cameraski.com/
+	Description: This is the CameraSki Theme created for the Genesis Framework.
+	Author: Carles Goodvalley
+	Author URI: https://cameraski.com/
+
+	Version: 2.2.4
+
+	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+	Template: genesis
+	Template Version: 2.2.3
+
+	License: GPL-2.0+
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/* # Table of Contents
+- HTML5 Reset
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Gallery
+	- Forms
+	- Tables
+	- Screen Reader Text
+- Structure and Layout
+	- Site Containers
+	- Column Widths and Positions
+	- Column Classes
+- Common Classes
+	- Avatar
+	- Genesis
+	- Search Form
+	- Titles
+	- WordPress
+- Widgets
+	- Featured Content
+- Plugins
+	- Genesis eNews Extended
+	- Jetpack
+- Skip Links
+- Site Header
+	- Title Area
+	- Widget Area
+- Site Navigation
+	- Accessible Menu
+	- Site Header Navigation
+	- After Header Navigation
+	- Footer Navigation
+- Content Area
+	- Entries
+	- Entry Meta
+	- Pagination
+	- Comments
+- Sidebars
+- Footer Widgets
+- Site Footer
+- Media Queries
+	- Max-width: 1340px
+	- Max-width: 1200px
+	- Max-width: 1023px
+	- Max-width: 860px
+- Print Styles
+*/
+
+
+/* # HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Baseline Normalize
+--------------------------------------------- */
+/* normalize.css v4.1.1 | MIT License | http://necolas.github.io/normalize.css/ */
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}template,[hidden]{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:0.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+/* ## Box Sizing
+--------------------------------------------- */
+
+html,
+input[type="search"]{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+
+/* ## Float Clearing
+--------------------------------------------- */
+
+.author-box:before,
+.clearfix:before,
+.entry:before,
+.entry-content:before,
+.footer-widgets:before,
+.nav-primary:before,
+.nav-secondary:before,
+.pagination:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.site-inner:before,
+.widget:before,
+.wrap:before {
+	content: " ";
+	display: table;
+}
+
+.author-box:after,
+.clearfix:after,
+.entry:after,
+.entry-content:after,
+.footer-widgets:after,
+.nav-primary:after,
+.nav-secondary:after,
+.pagination:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.site-inner:after,
+.widget:after,
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Typographical Elements
+--------------------------------------------- */
+
+html {
+	font-size: 62.5%; /* 10px browser default */
+}
+
+/* Chrome fix */
+body > div {
+	font-size: 1.4rem;/* SKIREV Anterior: 2rem; */
+}
+
+body {
+    background-color: url("images/main_bg.png") repeat; /* SKIREV Anterior: background-color: #eee; */
+	color: #333;
+	font-family: Lato, sans-serif; /* SKIREV Anterior:  'Source Sans Pro', sans-serif; */
+    font-size: 14px; /* SKIREV Anterior: 20px; */
+	font-size: 1.4rem;/* SKIREV Anterior: 2rem; */
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	line-height: 1.625;
+	margin: 0;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.gallery img {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+a {
+	color: #c3251d;
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+	color: #333;
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 28px;
+	padding: 0;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #eee;
+	clear: both;
+	margin: 1em 0;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+blockquote,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 40px;
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 30px;
+	font-size: 3rem;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+
+/* ## Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #666; /* SKIREV Anterior: No hi havia color; */
+	font-family: 'Droid Sans', Lato, sans-serif; /* SKIREV Anterior: font-family: 'Source Sans Pro', sans-serif; */
+	font-weight: 400; /* SKIREV Anterior: 600; */
+	line-height: 1.2;
+}
+
+/* CAMSKI 2017-03-18 */
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 5px; /* SKIREV Anterior: 0 0 10px; */
+}
+/* / CAMSKI 2017-03-18 */
+
+h1 {
+	font-size: 21px; /* SKIREV Anterior: 36px; */
+	font-size: 2.1rem;/* SKIREV Anterior:  3.6rem*/
+	margin: 0; /* CAMSKI 2017-03-18 */
+	padding: 0 0 5px; /* CAMSKI 2017-03-18 */
+}
+
+h2 {
+	font-size: 30px; /* SKIREV Anterior: 30px; */
+	font-size: 3rem;/* SKIREV Anterior: 3rem */
+}
+
+h3 {
+	font-size: 24px; /* SKIREV Anterior: 24px; */
+	font-size: 2.4rem;/* SKIREV Anterior: 2.4rem */
+}
+
+h4 {
+	font-size: 14px; /* SKIREV Anterior: 20px; */
+	font-size: 1.4rem;/* SKIREV Anterior: 2rem */
+}
+
+h5 {
+	font-size: 18px; /* SKIREV Anterior: 18px; */
+	font-size: 1.8rem;/* SKIREV Anterior: 1.8rem */
+}
+
+h6 {
+	font-size: 16px; /* SKIREV Anterior: 16px; */
+	font-size: 1.6rem;/* SKIREV Anterior: 1.6rem */
+}
+
+/* ## Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+figure {
+	margin: 0;
+}
+
+/* ## Gallery
+--------------------------------------------- */
+
+.gallery {
+	overflow: hidden;
+}
+
+.gallery-item {
+	float: left;
+	margin: 0 0 28px;
+	text-align: center;
+}
+
+.gallery-columns-1 .gallery-item {
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16.6666%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14.2857%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11.1111%;
+}
+
+.gallery-columns-2 .gallery-item:nth-child(2n+1),
+.gallery-columns-3 .gallery-item:nth-child(3n+1),
+.gallery-columns-4 .gallery-item:nth-child(4n+1),
+.gallery-columns-5 .gallery-item:nth-child(5n+1),
+.gallery-columns-6 .gallery-item:nth-child(6n+1),
+.gallery-columns-7 .gallery-item:nth-child(7n+1),
+.gallery-columns-8 .gallery-item:nth-child(8n+1),
+.gallery-columns-9 .gallery-item:nth-child(9n+1) {
+	clear: left;
+}
+
+.gallery img {
+	border: 1px solid #eee;
+	height: auto;
+	padding: 4px;
+}
+
+.gallery img:hover,
+.gallery img:focus {
+	border: 1px solid #999;
+}
+
+/* ## Forms
+--------------------------------------------- */
+
+input,
+select,
+textarea {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	color: #333;
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: 400;
+	padding: 16px;
+	width: 100%;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid #999;
+	outline: none;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+::-moz-placeholder {
+	color: #333;
+    /* font-weight: 300; SKIREV - SAMPLE THEME ORIGINAL */
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #333;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+	background-color: #333;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 700;
+	padding: 16px 24px;
+	text-decoration: none;
+	white-space: normal;
+	width: auto;
+}
+
+button:hover,
+input:hover[type="button"],
+input:hover[type="reset"],
+input:hover[type="submit"],
+.button:hover,
+button:focus,
+input:focus[type="button"],
+input:focus[type="reset"],
+input:focus[type="submit"],
+.button:focus  {
+	background-color: #c3251d;
+	color: #fff;
+}
+
+.entry-content .button:hover,
+.entry-content .button:focus {
+	color: #fff;
+}
+
+.button {
+	display: inline-block;
+}
+
+a.button.small,
+button.small,
+input[type="button"].small,
+input[type="reset"].small,
+input[type="submit"].small {
+	padding: 8px 16px;
+}
+
+.site-container button:disabled,
+.site-container button:disabled:hover,
+.site-container input:disabled,
+.site-container input:disabled:hover,
+.site-container input[type="button"]:disabled,
+.site-container input[type="button"]:disabled:hover,
+.site-container input[type="reset"]:disabled,
+.site-container input[type="reset"]:disabled:hover,
+.site-container input[type="submit"]:disabled,
+.site-container input[type="submit"]:disabled:hover {
+	background-color: #eee;
+	border-width: 0;
+	color: #777;
+	cursor: not-allowed;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+/* ## Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 40px;
+	width: 100%;
+	word-break: break-word;
+}
+
+tbody {
+	border-bottom: 1px solid #eee;
+}
+
+td,
+th {
+	text-align: left;
+}
+
+td {
+	/* border-top: 1px solid #eee; */
+  	border-top: 0; /* Original: 1px solid #eee; METEO */
+	padding: 6px;
+}
+
+th {
+	font-weight: 400;
+	padding: 0 6px;
+}
+
+td:first-child,
+th:first-child {
+	padding-left: 0;
+}
+
+/* ## Screen Reader Text
+--------------------------------------------- */
+
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus,
+.genesis-nav-menu .search input[type="submit"]:focus,
+.widget_search input[type="submit"]:focus  {
+	clip: auto !important;
+	height: auto;
+	width: auto;
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 15px 23px 14px;
+	color: #333;
+	background: #fff;
+	z-index: 100000; /* Above WP toolbar. */
+	text-decoration: none;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+}
+
+.more-link {
+    position: relative;
+}
+
+
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+--------------------------------------------- */
+
+.site-inner,
+.wrap {
+	margin: 0 auto;
+	max-width: none; /* SKIREV Anterior: max-width: 1280px; */
+}
+
+.site-inner {
+	clear: both;
+	/* SKIREV */
+	max-width: none;
+	/* /SKIREV */
+	padding-top: 0; /* SKIREV Anterior: padding-top: 40px; */
+	word-wrap: break-word;
+}
+
+/* SKIREV Only for FrontPage */
+.home .site-inner {
+	max-width: none;
+	padding-top: 0;
+}
+/* /SKIREV */
+
+.landing-page .site-inner {
+	max-width: 800px;
+}
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	width: 1060px;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap {
+	float: left;
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	float: right;
+}
+
+/* ### Content */
+
+.content {
+	float: right;
+	width: 880px;
+}
+
+.content-sidebar .content,
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content {
+	float: left;
+}
+
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content {
+	width: 660px;
+}
+
+.full-width-content .content {
+	width: 100%;
+}
+
+/* ### Primary Sidebar */
+
+.sidebar-primary {
+	float: right;
+	width: 360px;
+}
+
+.sidebar-content .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+	float: left;
+}
+
+/* ### Secondary Sidebar */
+
+.sidebar-secondary {
+	float: left;
+	width: 180px;
+}
+
+.content-sidebar-sidebar .sidebar-secondary {
+	float: right;
+}
+
+/* SKIREV - FLEXBOX */
+.flexbox-top,
+.flexbox-bottom,
+.flexbox-webcam,
+.flexbox-meteo-weather {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	overflow: hidden;
+}
+
+.flexbox-webcam {
+	background: #f6f6f6;
+}
+
+.flexbox-webcam .webcams-one-fourth {
+	background-color: #1E73BE;
+	margin: 5px;
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.webcam-wrap {
+	background: #f6f6f6;
+	margin: 5px;
+}
+
+.webcam-image {
+	margin: 0;
+}
+
+.webcam-info-wrap {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	background: #1E73BE;
+}
+
+.webcam-name,
+.webcam-description {
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.webcam-name {
+	margin: 5px 0 0;
+}
+
+.webcam-description {
+	margin: 0 0 5px 0;
+}
+
+/* ## SKIREV - Column Classes
+--------------------------------------------- */
+.one-half,
+.one-fifth,
+.one-fourth,
+.two-fifths,
+.three-fifths,
+.four-fifths
+.five-fifths {
+	background:#ffffff;
+	background: -webkit-linear-gradient(top, #ffffff, #f6f6f6);
+    background:    -moz-linear-gradient(top, #ffffff, #f6f6f6);
+    background:     -ms-linear-gradient(top, #ffffff, #f6f6f6);
+    background:      -o-linear-gradient(top, #ffffff, #f6f6f6);
+	border-bottom: 1px solid #d7d7d7;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	float: left;
+}
+
+.one-half,
+.one-fifth,
+.two-fifths,
+.three-fifths,
+.four-fifths  {
+	margin-left: 0.83333333333333%;
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+	width: 49.583333333333%;
+}
+ 
+.one-third,
+.two-sixths {
+	width: 32.777777777778%;
+}
+ 
+.four-sixths,
+.two-thirds {
+	width: 66.388888888889%;
+}
+ 
+.one-fourth,
+.webcams-one-fourth {
+	max-width: 24.3%;
+}
+ 
+.three-fourths {
+	width: 74.791666666667%;
+}
+ 
+.one-fifth {
+	/*width: 19.333333333333%;*/
+	width: 27.333333333333%;
+}
+ 
+.two-fifths {
+	/*width: 39.5%;*/
+	width: 35.5%;
+}
+ 
+.three-fifths {
+	/*width: 39.5%;/* SKIREV Anterior: 59.666666666667% */
+	width: 35.5%;/* SKIREV Anterior: 59.666666666667% */
+}
+ 
+/*.four-fifths {
+	width: 79.833333333333%;
+}*/
+ 
+.one-sixth {
+	width: 15.972222222222%;
+}
+ 
+.five-sixths {
+	width: 83.194444444444%;
+}
+ 
+.first {
+	clear: both;
+	margin-left: 0;
+}
+
+.first-2 {
+	margin-left: 0;
+}
+
+/* Style */
+.background-boxes {
+	background:#ffffff;
+	background: -webkit-linear-gradient(top, #ffffff, #f6f6f6);
+    background: -moz-linear-gradient(top, #ffffff, #f6f6f6);
+    background: -ms-linear-gradient(top, #ffffff, #f6f6f6);
+    background: -o-linear-gradient(top, #ffffff, #f6f6f6);
+	/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid #d7d7d7;*/
+}
+
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Avatar
+--------------------------------------------- */
+
+.avatar {
+	border-radius: 50%;
+	float: left;
+}
+
+.author-box .avatar,
+.alignleft .avatar {
+	margin-right: 24px;
+}
+
+.alignright .avatar {
+	margin-left: 24px;
+}
+
+.comment .avatar {
+	margin: 0 16px 24px 0;
+}
+
+/* ## Genesis
+--------------------------------------------- */
+
+.breadcrumb {
+	background-color: #fff;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 1px;
+	padding: 12px 30px;
+}
+
+.after-entry,
+.archive-description,
+.author-box {
+	background-color: #fff;
+	font-size: 18px;
+	font-size: 1.8rem;
+	margin: 10px 0; /* CAMSKI -> Original: 40px */
+	padding: 10px 10px 10px 20px; /* CAMSKI -> Original: 60px */
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+	margin-bottom: 0;
+}
+
+/* ## Search Form
+--------------------------------------------- */
+
+.search-form {
+	overflow: hidden;
+}
+
+.entry-content .search-form,
+.site-header .search-form {
+	margin-bottom: 40px;
+	width: 50%;
+}
+
+.site-header .search-form {
+	float: right;
+	margin: 12px auto 0;
+    /* Sridhar Katakam - Sample Theme Master */
+	width: 288px;
+}
+
+.post-password-form input[type="submit"],
+.search-form input[type="submit"] {
+	margin-top: 10px;
+}
+
+.genesis-nav-menu .search input[type="submit"],
+.widget_search input[type="submit"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* ## Titles
+--------------------------------------------- */
+
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+	font-size: 26px; /* CAMSKI -> Original: 20px */
+	font-size: 2.6rem; /* CAMSKI -> Original: 2rem */
+	font-weight: bold; /* CAMSKI */
+}
+
+.archive-description h1 {
+	color: #000;
+}
+
+.entry-title {
+	font-size:  26px; /* SKIREV Anterior: 36px; */
+	font-size: 2.6rem; /* SKIREV Anterior: 3.6rem */
+	font-weight: bold; /* CAMSKI */
+}
+
+/* CAMSKI 2017-03-20 */
+#archive-entry-title-attr {
+	font-size: 20px;
+	font-size: 2rem;
+}
+/* / CAMSKI 2017-03-20 */
+
+.entry-title a,
+.sidebar .widget-title a {
+	color: #333;
+	text-decoration: none;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+	color: #c3251d;
+}
+
+.widget-title {
+	font-size: 18px;
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+
+/* ## WordPress
+--------------------------------------------- */
+
+a.aligncenter img {
+	display: block;
+	margin: 0 auto;
+}
+
+a.alignnone {
+	display: inline-block;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+a.alignleft,
+a.alignnone,
+a.alignright {
+	max-width: 100%;
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto 24px;
+}
+
+img.alignnone,
+.alignnone {
+	margin-bottom: 12px;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 24px 24px 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 24px 24px;
+}
+
+.wp-caption-text {
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
+}
+
+.entry-content p.wp-caption-text {
+	margin-bottom: 0;
+}
+
+.entry-content .wp-audio-shortcode,
+.entry-content .wp-playlist,
+.entry-content .wp-video {
+	margin: 0 0 28px;
+}
+
+
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+	margin-bottom: 40px;
+	word-wrap: break-word;
+}
+
+.widget p:last-child,
+.widget ul > li:last-of-type,
+.widget-area .widget:last-of-type {
+	margin-bottom: 0;
+}
+
+.widget ul > li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.widget ul > li:last-of-type {
+	padding-bottom: 0;
+}
+
+.widget ol > li {
+	list-style-position: inside;
+	list-style-type: decimal;
+	padding-left: 20px;
+	text-indent: -20px;
+}
+
+.widget li li {
+	border: 0;
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+
+.widget_calendar table {
+	width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+/* ## Featured Content
+--------------------------------------------- */
+
+.featured-content .entry {
+	background: none;
+	padding: 0;
+}
+
+.featured-content .entry:last-of-type {
+	margin-bottom: 0;
+}
+
+.featured-content .entry-title {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Genesis eNews Extended
+--------------------------------------------- */
+
+.sidebar .enews-widget,
+.sidebar .enews-widget .widget-title {
+	color: #fff;
+}
+
+.sidebar .widget.enews-widget {
+	background-color: #333;
+}
+
+.sidebar .enews-widget input,
+.sidebar .enews-widget input:focus {
+	border: 1px solid #333;
+}
+
+.sidebar .enews-widget input[type="submit"] {
+	background-color: #c3251d;
+	color: #fff;
+}
+
+.sidebar .enews-widget input:hover[type="submit"],
+.sidebar .enews-widget input:focus[type="submit"]  {
+	background-color: #fff;
+	color: #333;
+}
+
+.enews-widget input {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 16px;
+}
+
+.enews-widget input[type="submit"] {
+	margin: 0;
+	width: 100%;
+}
+
+.enews form + p {
+	margin-top: 24px;
+}
+
+/* ## Jetpack
+--------------------------------------------- */
+
+#wpstats {
+	display: none;
+}
+
+
+/* # Skip Links
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-skip-link {
+	margin: 0;
+}
+
+.genesis-skip-link li {
+	height: 0;
+	width: 0;
+	list-style: none;
+}
+
+/* Display outline on focus */
+:focus {
+	color: #333;
+	outline: #ccc solid 1px;
+}
+
+
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	background-color: #1E73BE; /* SKIREV - Anterior: #fff */
+	/*min-height: 160px;*/
+}
+
+.site-header > .wrap {
+	padding: 0 40px; /* SKIREV - Anterior: 20px 0 */
+}
+
+/* ## Title Area
+--------------------------------------------- */
+
+.title-area {
+	float: left;
+	padding: 10px 0;
+    /* SKIREV width: 360px; */
+	width: 300px;
+}
+
+.header-image .title-area {
+	margin: 0 auto;
+	max-width: 300px;
+    padding: 10px 0; /* SKIREV Anterior: 0; */
+}
+
+.header-full-width .title-area {
+	float: none;
+	width: 100%;
+}
+
+.site-title {
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.site-title a,
+.site-title a:hover,
+.site-title a:focus {
+	color: #333;
+	text-decoration: none;
+}
+
+/* SKIREV */
+.site-title img {
+	vertical-align: top;
+}
+
+.header-image .site-title > a {
+	background-position: center !important;
+	background-size: contain !important;
+	float: left;
+	min-height: 80px;
+	width: 100%;
+}
+
+.site-description {
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.site-description,
+.site-title {
+	margin-bottom: 0;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+	display: block;
+	/* SKIREV text-indent: -9999px; */
+	text-indent: 0;
+}
+
+/* ## Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+	float: right;
+	text-align: right;
+	width: 800px;
+}
+
+
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu {
+	clear: both;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1;
+	width: 100%;
+}
+
+.genesis-nav-menu .menu-item {
+	display: inline-block;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: left;
+}
+
+.genesis-nav-menu a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	padding: 32px 20px;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
+	color: #c3251d;
+	text-decoration: underline;
+}
+
+.genesis-nav-menu .sub-menu {
+	border-top: 1px solid #eee;
+	left: -9999px;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition:    opacity .4s ease-in-out;
+	-ms-transition:     opacity .4s ease-in-out;
+	-o-transition:      opacity .4s ease-in-out;
+	transition:         opacity .4s ease-in-out;
+	width: 200px;
+	z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-top: 0;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 20px;
+	position: relative;
+	width: 200px;
+	word-wrap: break-word;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+	margin: -56px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+	position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+	padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+	padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+	float: right;
+}
+
+/* ## Accessible Menu
+--------------------------------------------- */
+
+.menu .menu-item:focus {
+	position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.sfHover > ul.sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.sub-menu-toggle,
+.menu-toggle {
+	display: none;
+	visibility: hidden;
+}
+
+/* ## Site Header Navigation
+--------------------------------------------- */
+
+.site-header .genesis-nav-menu li li {
+	margin-left: 0;
+}
+
+/* ## After Header Navigation
+--------------------------------------------- */
+
+/* SKIREV
+.nav-primary {
+	background-color: #fff;
+	border-top: 1px solid #eee;
+}*/
+
+/* SKIREV */
+.nav-primary {
+	background-color: #1E73BE;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.nav-primary li a {
+	color: #000;
+}
+/* /SKIREV */
+
+/* SKIREV */
+.nav-primary a:last-of-type {
+	padding-right: 0;
+}
+/* /SKIREV */
+
+.nav-secondary {
+	background-color: #fff;
+	/* SKIREV */
+	padding-left: 40px;
+	/* /SKIREV */
+}
+
+/* ## Footer Navigation
+--------------------------------------------- */
+
+.site-footer .genesis-nav-menu {
+	padding-bottom: 20px;
+}
+
+.site-footer .genesis-nav-menu a {
+	padding: 0 20px 10px;
+}
+
+
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Entries
+--------------------------------------------- */
+
+.entry {
+	background-color: #fff;
+	margin-bottom: 0; /* SKIREV Anterior: 40px; */
+	padding: 5px 10px; /* SKIREV Anterior: padding: 70px 80px; */
+}
+
+.content .entry {
+	background: url("images/main_bg.png") repeat; /* SKIREV Anterior: background-color: #fff; */
+}
+
+.entry-content ol,
+.entry-content ul {
+	margin-bottom: 28px;
+	margin-left: 40px;
+}
+
+.entry-content ol > li {
+	list-style-type: decimal;
+}
+
+.entry-content ul > li {
+	list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+.entry-content code {
+	background-color: #333;
+	color: #eee;
+}
+
+/* ## Entry Meta
+--------------------------------------------- */
+
+p.entry-meta {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+.entry-header {
+	background-color: #fff;
+	background: -webkit-linear-gradient(top, #ffffff, #f6f6f6);
+    background:    -moz-linear-gradient(top, #ffffff, #f6f6f6);
+    background:     -ms-linear-gradient(top, #ffffff, #f6f6f6);
+    background:      -o-linear-gradient(top, #ffffff, #f6f6f6);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	margin: 0 0 5px;
+	padding: 5px 10px 0;
+}
+
+.entry-header .entry-meta {
+	margin-bottom: 5px; /* CAMSKI -> Original: 24px */
+}
+
+.entry-footer .entry-meta {
+	border-top: 1px solid #eee;
+	padding-top: 24px;
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}
+
+/* ## Pagination
+--------------------------------------------- */
+
+.pagination {
+	clear: both;
+	margin: 40px 0;
+}
+
+.adjacent-entry-pagination {
+	margin-bottom: 0;
+}
+
+.archive-pagination li {
+	display: inline;
+}
+
+.archive-pagination a {
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 600;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+.archive-pagination a:hover,
+.archive-pagination a:focus,
+.archive-pagination .active a {
+	background-color: #c3251d;
+	color: #fff;
+}
+
+/* ## Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	background-color: #fff;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 40px;
+}
+
+.comment-respond,
+.entry-pings {
+	padding: 60px 60px 32px;
+}
+
+.entry-comments {
+	padding: 60px;
+}
+
+.comment-list li {
+	padding: 40px 0 0 30px;
+}
+
+.comment-list .depth-1 {
+	padding-left: 0;
+}
+
+.comment-header {
+	margin-bottom: 30px;
+}
+
+.comment-content {
+	clear: both;
+}
+
+.comment-content ul > li {
+	list-style-type: disc;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%;
+}
+
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+}
+
+.comment-header p {
+	margin-bottom: 0;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 40px;
+}
+
+.sidebar .widget {
+	background-color: #fff;
+	padding: 40px;
+}
+
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	background-color: #fff;
+	font-size: 18px;
+	font-size: 1.8rem;
+	clear: both;
+	padding: 60px 0;
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+	width: 380px;
+}
+
+.footer-widgets-1 {
+	margin-right: 70px;
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+	float: left;
+}
+
+.footer-widgets-3 {
+	float: right;
+}
+
+
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+    /* SKIREVIEWER */
+	background: -webkit-linear-gradient(top, #ffffff, #b5b5b5);
+    background:    -moz-linear-gradient(top, #ffffff, #b5b5b5);
+    background:     -ms-linear-gradient(top, #ffffff, #b5b5b5);
+    background:      -o-linear-gradient(top, #ffffff, #b5b5b5);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	/* SKIREV Anterior background-color: #fff; */
+	border-top: 1px solid #eee;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1;
+	padding: 60px 0;
+	text-align: center;
+}
+
+.site-footer p {
+	margin-bottom: 0;
+}
+
+/* # Meteo Detail
+---------------------------------------------------------------------------------------------------- */
+/*
+ul.tabbernav {
+	margin: 0;
+	padding: 0 3px;
+} METEO-WEATHER -> Així estava a CameraSki-03 per al Meteo-Detail. */
+
+/* SKIREV - AQUÍ ANAVA RESPONSIVE MENU I MEDIA QUERIES ---------------------------- */
+
+/* # Media Queries
+---------------------------------------------------------------------------------------------------- 
+
+@media only screen and (max-width: 1340px) {
+
+	.site-inner,
+	.wrap {
+		max-width: 1140px;
+	}
+
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		width: 920px;
+	}
+
+	.content,
+	.site-header .widget-area {
+		width: 800px;
+	}
+
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content,
+	.content-sidebar-sidebar .content {
+		width: 580px;
+	}
+
+	.sidebar-primary {
+		width: 300px;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3 {
+		width: 340px;
+	}
+
+	.footer-widgets-1 {
+		margin-right: 60px;
+	}
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+	.site-inner,
+	.wrap {
+		max-width: 960px;
+	}
+
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		width: 740px;
+	}
+
+	.content,
+	.site-header .widget-area {
+		width: 620px;
+	}
+
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content,
+	.content-sidebar-sidebar .content {
+		width: 400px;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3 {
+		width: 300px;
+	}
+
+	.footer-widgets-1 {
+		margin-right: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+	.site-inner,
+	.wrap {
+		max-width: 800px;
+	}
+
+	.content,
+	.content-sidebar-sidebar .content,
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.js .genesis-nav-menu .sub-menu a,
+	.js .genesis-nav-menu .sub-menu, 
+	.sidebar-content-sidebar .content,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-primary,
+	.sidebar-secondary,
+	.sidebar-sidebar-content .content,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.site-header .widget-area,
+	.title-area {
+		width: 100%;
+	}
+
+	.site-header .wrap {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.genesis-nav-menu li,
+	.header-image .title-area,
+	.site-header ul.genesis-nav-menu,
+	.site-header .search-form {
+		float: none;
+	}
+
+	.genesis-nav-menu,
+	.site-description,
+	.site-header .title-area,
+	.site-header .widget-area,
+	.site-title {
+		text-align: center;
+	}
+
+	.site-header .search-form {
+		margin: 16px auto;
+	}
+
+	.js nav.nav-primary,
+	.js .site-header nav  {
+		display: none;
+		position: relative;
+	}
+
+	.js .site-header nav .wrap {
+		padding: 0;
+	}
+
+	.js nav.pagination {
+		display: block;
+	}
+
+	.menu-toggle,
+	.sub-menu-toggle {
+		border-width: 0;
+		background-color: #fff;
+		color: #333;
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+		text-align: center;
+		visibility: visible;
+	}
+	
+	.sub-menu-toggle:hover,
+	.sub-menu-toggle:focus {
+		border-width: 0;
+	}
+
+	.menu-toggle {
+		border-top: 1px solid #eee;
+		line-height: 20px;
+		position: relative;
+		right: 0;
+		z-index: 1000;
+		width: 100%;
+	}
+
+	.site-header .menu-toggle {
+		border: 0;
+	}
+
+	.menu-toggle:before,
+	.menu-toggle.activated:before {
+		margin-right: 10px;
+		text-rendering: auto;
+		-webkit-transform: translate(0, 0);
+		-ms-transform:     translate(0, 0);
+		transform:         translate(0, 0);
+	}
+
+	.sub-menu-toggle {
+		float: right;
+		padding: 10px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 100;
+	}
+
+	.sub-menu-toggle:before {
+		display: inline-block;
+		text-rendering: auto;
+		-webkit-transform: translate(0, 0);
+		-ms-transform:     translate(0, 0);
+		transform:         translate(0, 0);
+	}
+
+	.sub-menu-toggle.activated:before {
+		content: "\f142";
+	}
+
+	.js .nav-primary .genesis-nav-menu .menu-item,
+	.js .site-header .genesis-nav-menu .menu-item {
+		display: block;
+		float: none;
+		margin: 1px 0;
+		position: relative;
+		text-align: left;
+	}
+
+	.js .genesis-nav-menu .menu-item:hover {
+		position: relative;
+	}
+
+	.js .nav-primary .genesis-nav-menu .menu-item a,
+	.js .site-header .genesis-nav-menu .menu-item a {
+		border: none;
+		padding: 12px 0;
+		width: 100%;
+	}
+
+	.js .genesis-nav-menu .sub-menu {
+		border: none;
+	}
+
+	.js .genesis-nav-menu .menu-item > a:focus ul.sub-menu,
+	.js .genesis-nav-menu .menu-item > a:focus ul.sub-menu .sub-menu {
+		left: 0;
+		margin-left: 0;
+	}
+
+	.js .genesis-nav-menu > .menu-item-has-children > a:after {
+		content: none;
+	}
+
+	.js .genesis-nav-menu .sub-menu {
+		clear: both;
+		display: none;
+		margin: 0;
+		opacity: 1;
+		padding-left: 15px;
+		position: static;
+		width: 100%;
+	}
+
+	.js .genesis-nav-menu .sub-menu .sub-menu {
+		margin: 0;
+	}
+
+	.js nav button:hover,
+	.js .menu-toggle:hover,
+	.js .nav-primary {
+		background-color: #fff;
+		color: #000;
+	}
+
+	.js nav button:focus,
+	.js .menu-toggle:focus {
+		background-color: #fff;
+		color: #c3251d;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2 {
+		margin: 0 auto 40px;
+	}
+
+}
+
+@media only screen and (max-width: 860px) {
+
+	body > div {
+		font-size: 1.8rem;
+	}
+
+	body {
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
+
+	.site-inner {
+		padding: 5% 5% 0;
+	}
+
+	.wrap {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.after-entry,
+	.archive-description,
+	.author-box,
+	.comment-respond,
+	.entry,
+	.entry-comments,
+	.entry-pings,
+	.sidebar .widget {
+		padding: 30px;
+		margin-bottom: 5%;
+	}
+
+	.sidebar {
+		margin-bottom: 5%;
+	}
+
+	.pagination {
+		margin: 5% auto;
+	}
+
+	.archive-pagination li a {
+		margin-bottom: 4px;
+	}
+
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0;
+		width: 100%;
+	}
+
+}
+
+
+/* # Print Styles
+---------------------------------------------------------------------------------------------------- */
+
+@media print {
+
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		box-shadow: none !important;
+		color: #000 !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after,
+	.site-title > a:after {
+		content: "";
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	img,
+	tr {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 2cm 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	blockquote,
+	pre {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	.content,
+	.content-sidebar {
+		width: 100%;
+	}
+
+	button,
+	input,
+	select,
+	textarea,
+	.breadcrumb,
+	.comment-edit-link,
+	.comment-form,
+	.comment-list .reply a,
+	.comment-reply-title,
+	.edit-link,
+	.entry-comments-link,
+	.entry-footer,
+	.genesis-box,
+	.header-widget-area,
+	.hidden-print,
+	.home-top,
+	.nav-primary,
+	.nav-secondary,
+	.post-edit-link,
+	.sidebar {
+		display: none !important;
+	}
+
+	.title-area {
+		text-align: center;
+		width: 100%;
+	}
+
+	.site-title > a {
+		margin: 0;
+		text-decoration: none;
+		text-indent: 0;
+	}
+
+	.site-inner {
+		padding-top: 0;
+		position: relative;
+		top: -100px;
+	}
+
+	.author-box {
+		margin-bottom: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		orphans: 3;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		widows: 3;
+	}
+
+
+	img {
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	blockquote,
+	pre,
+	table {
+		page-break-inside: avoid;
+	}
+
+	dl,
+	ol,
+	ul {
+		page-break-before: avoid;
+	}
+
+}
+
+/* CAMERASKI ----------------------------------------------------------- */
+
+/* To clear search input field's text when the search field gets focus */
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+/* ----------------------------- SKIREV --------------------------------- */
+
+/* ICON FONTS ICOMOON */
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?2pyxd0');
+    src:    url('fonts/icomoon.eot?2pyxd0#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?2pyxd0') format('truetype'),
+        url('fonts/icomoon.woff?2pyxd0') format('woff'),
+        url('fonts/icomoon.svg?2pyxd0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/***********************************************************************************/
+/* DIV ID "OVERVIEW-TOP-LEFT" CLASS "TWO FIFTHS FIRST"                             */
+/***********************************************************************************/
+.two-fifths {
+	text-align: center;
+}
+
+/* Estil P (pàrraf) on hi ha el títol de la WebCam */
+.main-webcam-title {
+	background-color: #1E73BE;
+	border: solid 0 10px #1E73BE;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	margin: 10px 0 5px 0;
+	padding: 0 5px;
+	text-align: center;
+}
+
+/* Estil P (pàrraf) on hi ha la imatge de la WebCam */
+.main-webcam-image {
+	margin: 5px 10px auto;
+	margin-bottom: 10px;
+}
+
+/***********************************************************************************/
+/* DIV ID "OVERVIEW-TOP-CENTER" CLASS "ONE FIFTH"                                  */
+/***********************************************************************************/
+.entry-content ul#ul-status,
+.entry-content ul#ul-season {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid #d7d7d7;
+} 
+
+.entry-content ul#ul-status,
+.entry-content ul#ul-season,
+.entry-content ul#ul-today {
+	margin: 0;
+}
+
+.entry-content ul#ul-status li,
+.entry-content ul#ul-season li,
+.entry-content ul#ul-today li {
+	list-style-type:none;
+}
+
+#overview-central-tabs ul#ul-status li.datetime,
+#overview-central-tabs ul#ul-season li.season {
+	margin: 5px 5px;
+	text-align: center;
+}
+
+#overview-central-tabs p {
+	margin: 5px 20px 5px;
+	text-align: center;
+}
+
+.operating-status-open {
+	background-color: #008000;
+	border: solid 0 10px #ff0000;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	margin: 5px 2px 5px 2px;
+	padding: 0 5px;
+}
+
+.operating-status-closed {
+	background-color: #ff0000;
+	border: solid 0 10px #ff0000;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	margin: 5px 2px 5px 2px;
+	padding: 0 5px;
+}
+
+#overview-central-tabs ul#ul-season li.season {
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin: 5px 5px 5px;
+	text-align: center;
+}
+
+#overview-central-tabs ul#ul-today p.today {
+	color: #1E73BE;
+	font-size: 26px;
+	font-size: 2.6rem;
+	margin: 5px 0;
+	text-align: center;
+}
+
+#overview-central-tabs ul#ul-today li.open-lifts,
+#overview-central-tabs ul#ul-today li.open-slopes,
+#overview-central-tabs ul#ul-today li.open-length,
+#overview-central-tabs ul#ul-today li.snow-depth,
+#overview-central-tabs ul#ul-today li.snow-type {
+	font-size: 1.3rem;
+	margin: 0 0 0 10px;
+	text-align: left;
+}
+
+#overview-central-tabs ul#ul-today li.snow-depth-title {
+	font-size: 1.3rem;
+	margin: 0 0 0 10px;
+	text-align: center;
+}
+
+span.working-green {
+	color: green;
+}
+
+span.working-blue {
+	color: blue;
+}
+
+span.working-red {
+	color: red;
+}
+
+span.working-black {
+	color: black;
+}
+
+span.working-ski-routes {
+	color: orange;
+}
+
+span.working-nordic-tracks {
+	color: #9C9EA0;
+}
+
+#overview-central-tabs ul#ul-today li.snow-report-link {
+	margin: 5px 20px;
+	text-align: center;
+}
+
+#overview-central-tabs ul#ul-today li.snow-report-link a,
+#overview-central-tabs ul#ul-today li.snow-report-link a hover {
+	background-color: #000;
+	border: solid 0 10px #000;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	margin: 10px 0 10px;
+	padding: 0 5px;
+	text-align: center;
+}
+
+/***********************************************************************************/
+/* DIV ID "OVERVIEW-TOP-RIGHT" CLASS "THREE FIFTHS"                                */
+/***********************************************************************************/
+.entry-content ul.ul-overview-elevation-narrow,
+.entry-content ul.ul-overview-elevation,
+.entry-content ul.overview-lifts li,
+.entry-content ul.overview-lifts-line-1,
+.entry-content ul.overview-lifts-line-2,
+.entry-content ul.overview-lift-totals,
+.entry-content ul.overview-pricing {
+	margin: 0;
+}
+
+.entry-content ul.overview-slopes-colors li,
+.entry-content ul.ul-overview-elevation-narrow li,
+.entry-content ul.ul-overview-elevation li,
+.entry-content ul.ul-overview-other-slopes li,
+.entry-content ul.overview-lifts li,
+.entry-content ul.overview-lifts-line-1 li,
+.entry-content ul.overview-lifts-line-2 li,
+.entry-content ul.overview-lift-totals li,
+.entry-content ul.overview-pricing li {
+	list-style-type: none;
+}
+
+/* ESTIL BANDA ESQUERRA PISTES ----------------------------------------- */
+.overview-slopes-map {
+	float: left;
+	margin: 10px 0 10px 10px;
+	width: 39%;
+}
+
+.overview-slopes-map p {
+	margin: 0;
+}
+
+body .overview-slopes-map-mini {
+	line-height: 0;
+}
+
+/* ESTILS BANDA DRETA PISTES ------------------------------------------- */
+.entry-content ul.overview-slopes-colors {
+	float: right;
+	line-height: 1.225;
+	margin: 6px 10px 6px 0;
+	width: 55%;
+}
+
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green {
+	color: green;
+	font-size: 12px;
+	text-align: right;
+}
+
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+	font-size: 12px;
+	text-align: right;
+}
+
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue {
+	color: blue;
+}
+
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red {
+	color: red;
+}
+
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black {
+	color: black;
+}
+
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes {
+    clear: both;
+	color: orange;
+	display: inline-block;
+    float: right;
+}
+
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+	clear: both;
+    color: #9C9EA0;
+	display: inline-block;
+    float: right;
+}
+
+#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes {
+	background-color: #000;
+	border: solid 0 10px #000;
+	border-radius: 2px;
+	clear: both;
+	color: #fff;
+	display: inline-block;
+	/*margin: 0 10px 0 0;*/
+	float: right;
+    padding: 0 3px;
+	text-align: center;
+}
+
+@-moz-document url-prefix() {
+	span.double-diamond {
+    	/*letter-spacing: -4px*/
+	}
+}
+
+#overview-right-tabs-1 .overview-clear {
+	clear: both;
+}
+
+/* ESTIL BANDA ESQUERRA ELEVATION -------------------------------------- */
+.ul-overview-elevation-narrow {
+	display: none;
+	/*display: block;*/
+	float: left;
+	font-size: 12px;
+	text-align: left;
+	width:100%;
+}
+
+#overview-right-tabs-1 ul.ul-overview-elevation {
+	float: left;
+	line-height: 1.225;
+	margin: 0 0 5px 10px;
+	text-align: left;
+	font-size: 12px;
+	width: 50%;
+}
+
+#overview-right-tabs-2 ul.overview-lift-totals p.divi-horizontal-half {
+	border-top: 1px solid #d7d7d7;
+	margin: 5px 0 5px;
+	width: 95%;
+}
+
+/* ESTIL BANDA DRETA OTHER SLOPES */
+.entry-content ul.ul-overview-other-slopes {
+	float: right;
+	line-height: 1.225;
+	margin: 0 10px 0 0;
+	width: 45%;
+}
+
+/* ESTIL BANDA DRETA LIFTS --------------------------------------------- */
+#overview-right-tabs-2 ul.overview-lifts,
+#overview-right-tabs-2 ul.overview-lift-totals {
+	float: left;
+	font-size: 12px;
+	width: 100%;
+}
+
+#overview-right-tabs-2 ul.overview-lifts {
+	margin: 10px 0 0 10px;
+}
+
+#overview-right-tabs-2 ul.overview-lift-totals {
+	margin: 5px 0 0 10px;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li {
+	background: url("/images/icon-sprites.png") no-repeat scroll 0 0 transparent;
+	border: 1px solid #000;
+    float: left;
+    height: 50px;
+	margin-right: 10px;
+    overflow: hidden;
+    padding: 30px 0 0;
+    text-align: center;
+    width: 35px;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.cog-railways,
+#overview-right-tabs-2 ul.overview-lifts li.funicular,
+#overview-right-tabs-2 ul.overview-lifts li.aerial-cable-tramway-reversible-ropeway,
+#overview-right-tabs-2 ul.overview-lifts li.circulating_ropeway-gondola-lift,
+#overview-right-tabs-2 ul.overview-lifts li.combined-installation,
+#overview-right-tabs-2 ul.overview-lifts li.chairlift,
+#overview-right-tabs-2 ul.overview-lifts li.t-bar-lift-platter-button-lift,
+#overview-right-tabs-2 ul.overview-lifts li.rope-tow-beginner-lift,
+#overview-right-tabs-2 ul.overview-lifts li.magic-carpet-people-mover {
+	margin-bottom: 5px;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.cog-railways {
+	background-position: -665px 0;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.funicular {
+	background-position: -595px 0;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.aerial-cable-tramway-reversible-ropeway {
+	background-position: -70px 0;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.circulating_ropeway-gondola-lift {
+	background-position: -315px 0;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.combined-installation {
+	background-position: -385px 0;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.chairlift {
+	background-position: -245px 0;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.t-bar-lift-platter-button-lift {
+	background-position: -525px 0;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.rope-tow-beginner-lift {
+	background-position: -490px 0;
+}
+
+#overview-right-tabs-2 ul.overview-lifts li.magic-carpet-people-mover {
+	background-position: -420px 0;
+}
+
+/* ESTIL BANDA ESQUERRA PRICING ---------------------------------------- */
+#overview-right-tabs-2 ul.overview-pricing li.overview-pricing-title {
+	margin: 0;
+}
+
+span.see-all-prices {
+	background-color: #1E73BE;
+	border: solid 0 10px #1E73BE;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	margin: 5px 2px 5px 10px;
+	padding: 0 5px;
+}
+
+#overview-right-tabs-2 ul.overview-pricing {
+	float: left;
+	font-size: 12px;
+	margin: 0 0 5px 10px;
+	text-align: left;
+	width: 60%;
+}
+
+#overview-right-tabs-2 ul.overview-pricing li.end-of-prices-tab {
+	margin: 0;
+}
+
+.font-icons-overview {
+	font-size: 38px;
+	font-size: 3.8rem;
+}
+
+/***********************************************************************************/
+/* DIV ID "OVERVIEW-BOTTOM-LEFT" CLASS "ONE HALF FIRST"                            */
+/***********************************************************************************/
+#overview-bottom-left {
+	margin-top: 10px;
+}
+
+/***********************************************************************************/
+/* DIV ID "OVERVIEW-BOTTOM-RIGHT" CLASS "ONE HALF"                                 */
+/***********************************************************************************/
+#overview-bottom-right {
+	margin-top: 10px;
+}
+
+#overview-map {
+	width; 100%;
+}
+
+/* SKIREV */
+/* Responsive Menu
+--------------------------------------------- */
+.responsive-menu-icon {
+	cursor: pointer;
+	display: none;
+	text-align: center;
+}
+
+.responsive-menu-icon::before {
+	content: "\f333";
+	display: inline-block;
+	font: normal 20px/1 'dashicons';
+	margin: 0 auto;
+	padding: 16px 7px 16px 16px;
+}
+.nav-primary .responsive-menu-icon::before {
+	color: #fff;
+}
+
+.menu-text {
+	color: #fff;
+	line-height: 1;
+	vertical-align: top;
+	margin-top: 16px;
+	display: inline-block;
+}
+/* /SKIREV */
+
+/***********************************************************************************/
+/* DIV ID "OVERVIEW-METEO 							                               */
+/***********************************************************************************/
+.mobileOverviewTable {
+	display: none;
+}
+
+.myTemp {
+	text-shadow: 1px 1px black; 
+	font-weight: bolder; 
+	font-size: 150%; 
+}
+
+#pagina {
+	border-radius: 5px;
+	margin: 0px auto;
+	color: black;
+	padding: 0;
+}
+
+.meteo-update {
+	float: right;
+	line-height: 1.225;
+	margin: 5px auto;
+	text-align: right;
+}
+
+#update-times,
+#overview-forecast {
+	margin: 5px auto;
+	/*margin-top: 10px;*/
+	width: 98%;
+}
+
+.overviewTable,
+.yrno6hTable_1,
+.yrno6hTable,
+.yrno3hTable_1,
+.yrno3hTable,
+.meteoYrnoTable,
+.meteoYrnoTable3h {
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid black;
+	color: black;
+	/*border-top-left-radius: 8px;*/
+	/*border-top-right-radius: 8px;*/
+	width: 100%; /* SKIREV - Anterior: 100% */
+	line-height: 1.2;
+	text-align: center;
+}
+
+.mobileOverviewTable,
+.mobileYrno6hTable,
+.mobileYrno6hTable_1,
+.mobileYrno3hTable,
+.mobileYrno3hTable_1 {
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid black;
+	/*border-top-left-radius: 8px;*/
+	/*border-top-right-radius: 8px;*/
+	width: 100%; /* SKIREV - Anterior: 100% */
+	color: black;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.overviewTable,
+.yrno6hTable,
+.yrno3hTable,
+.mobileYrno6hTable,
+.mobileYrno3hTable {
+  	margin: 10px auto;
+}
+
+.yrno6hTable_1,
+.yrno3hTable_1,
+.meteoYrnoTable,
+.meteoYrnoTable3h {
+  	margin: 0;
+}
+
+.mobileOverviewTable {
+	margin: 20px auto;
+}
+
+.mobileYrno6hTable_1,
+.mobileYrno3hTable_1 {
+	margin: 0 auto;
+}
+
+.centerTable,
+.provaCenterTable,
+.mobileCenterTable,
+.mobileProvaCenterTable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.overviewTable th,
+.meteoYrnoTable th,
+.meteoYrnoTable3h th,
+.yrno6hTable_1 th,
+.yrno6hTable th,
+.yrno3hTable_1 th,
+.yrno3hTable th,
+.overviewTable td,
+.meteoYrnoTable td,
+.meteoYrnoTable3h td,
+.yrno6hTable_1 td,
+.yrno6hTable td,
+.yrno3hTable_1 td,
+.yrno3hTable td {
+	text-align: center;
+}
+
+.mobileOverviewTable td,
+.mobileYrno6hTable_1 td,
+.mobileYrno6hTable td,
+.mobileYrno3hTable_1 td,
+.mobileYrno3hTable td {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.th-period,
+.td-period,
+.mobile-td-period-1,
+.mobile-td-period-2 {
+	font-weight: bold;
+	padding: 5px;
+}
+
+.td-data-icons,
+.td-data-temperature,
+.td-data-weather,
+.td-arrow-wind,
+.td-foot {
+	padding: 5px;
+}
+
+.td-data-temperature {
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.overviewTable th,
+.tr-dayParts td,
+.yrno6hTable_1 th,
+.yrno6hTable th,
+.yrno3hTable_1 th,
+.yrno3hTable th {
+	border-bottom: 1px solid #000;
+}
+
+.overviewTable th:nth-child(2),
+.overviewTable th:nth-child(3),
+.overviewTable th:nth-child(4),
+.tr-dayParts td:nth-child(2),
+.tr-dayParts td:nth-child(3),
+.tr-dayParts td:nth-child(4),
+.tr-dayParts td:nth-child(5),
+.tr-dayParts td:nth-child(6),
+.tr-dayParts td:nth-child(7),
+.tr-dayParts td:nth-child(8),
+.yrno6hTable th:nth-child(2),
+.yrno6hTable th:nth-child(3),
+.yrno6hTable th:nth-child(4),
+.yrno3hTable th:nth-child(2),
+.yrno3hTable th:nth-child(3),
+.yrno3hTable th:nth-child(4) {
+	border-left: 1px solid #000;
+}
+
+.td-data-weather:nth-child(2),
+.td-data-weather:nth-child(3),
+.td-data-weather:nth-child(4),
+.td-3h-data-baro:nth-child(2),
+.td-3h-data-baro:nth-child(3),
+.td-3h-data-baro:nth-child(4),
+.td-3h-data-baro:nth-child(5),
+.td-3h-data-baro:nth-child(6),
+.td-3h-data-baro:nth-child(7),
+.td-3h-data-baro:nth-child(8),
+.td-3h-data-temp:nth-child(3),
+.td-3h-data-temp:nth-child(5),
+.td-3h-data-temp:nth-child(7),
+.td-3h-data-temp:nth-child(9),
+.td-3h-data-temp:nth-child(11),
+.td-3h-data-temp:nth-child(13),
+.td-3h-data-temp:nth-child(15),
+.td-3h-wind-speed:nth-child(2),
+.td-3h-wind-speed:nth-child(3),
+.td-3h-wind-speed:nth-child(4),
+.td-3h-wind-speed:nth-child(5),
+.td-3h-wind-speed:nth-child(6),
+.td-3h-wind-speed:nth-child(7),
+.td-3h-wind-speed:nth-child(8),
+.td-3h-wind-desc:nth-child(2),
+.td-3h-wind-desc:nth-child(3),
+.td-3h-wind-desc:nth-child(4),
+.td-3h-wind-desc:nth-child(5),
+.td-3h-wind-desc:nth-child(6),
+.td-3h-wind-desc:nth-child(7),
+.td-3h-wind-desc:nth-child(8) {
+	border-left: 1px solid #000;
+}
+
+.tr-top td:nth-child(3),
+.tr-top td:nth-child(5),
+.tr-top td:nth-child(7),
+.tr-icons td:nth-child(2),
+.tr-icons td:nth-child(3),
+.tr-icons td:nth-child(4),
+.tr-icons td:nth-child(5),
+.tr-icons td:nth-child(6),
+.tr-icons td:nth-child(7),
+.tr-icons td:nth-child(8),
+.tr-weather td:nth-child(3),
+.tr-weather td:nth-child(5),
+.tr-weather td:nth-child(7),
+.tr-bottom td:nth-child(2),
+.tr-bottom td:nth-child(3),
+.tr-bottom td:nth-child(4),
+.tr-bottom td:nth-child(5),
+.tr-bottom td:nth-child(6),
+.tr-bottom td:nth-child(7),
+.tr-bottom td:nth-child(8) {
+	border-left: 1px solid #000;
+}
+
+.td-data-temp,
+.td-arrow-wind,
+.td-6h-data-temperature,
+.td-3h-arrow-wind:nth-child(2),
+.td-3h-arrow-wind:nth-child(4),
+.td-3h-arrow-wind:nth-child(6),
+.td-3h-arrow-wind:nth-child(8),
+.td-3h-arrow-wind:nth-child(10),
+.td-3h-arrow-wind:nth-child(12),
+.td-3h-arrow-wind:nth-child(14),
+.td-3h-arrow-wind:nth-child(16) {
+	border-left: 1px solid #ccc;
+}
+
+.td-6h-data-temperature {
+	border-bottom: 1px solid #ccc;
+}
+
+.td-3h-data-baro,
+.td-3h-data-temp,
+.td-3h-arrow-wind,
+.td-3h-wind-speed {
+	border-top: 1px solid #ccc;
+}
+
+.td-data-weather,
+.td-foot {
+	border-top: 1px solid #ccc;
+}
+
+.td-foot {
+	color: #1e73be;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+td.mobile-td-period-1,
+td.mobile-td-period-2 {
+	font-size: 1.4rem;
+}
+
+.mobile-td-data-icons {
+	padding: 0;
+}
+
+.row-dark,
+.row-light,
+.tr3hRow {
+	color: #333;
+}
+
+/*.row-dark {
+	background-color: transparent;
+	background-color: #EEEEEE;
+	background-color: white;
+}
+
+.row-light {
+	background-color: transparent;
+	background-color: #f1f8fe;
+	background-color: white;
+}*/
+
+.row-dark,
+.row-light,
+.tr3hRow {
+	background-color: white;
+}
+
+.overviewYrnodateline,
+.provaYrnoDateline,
+.yrnoDateHeader {
+	color: white;
+	vertical-align: middle;
+	height: 28px;
+	border-style: solid;
+	border-width: 1px 0 1px 0;
+	border-spacing: 4px;
+	border-color: gray;
+}
+
+.yrnoDateHeader {
+	background-color: #1E73BE;
+}
+
+.yrnoDateHeader th {
+	padding: 5px 10px;
+}
+
+/************************************************************************/
+/*	METEO TABS															*/
+/************************************************************************/
+#blue {
+	color: black;
+	/*background-color: #F1F8FE;*/
+}
+
+#blue li.tabberactive a {
+	background-color: #1E73BE;
+}
+
+#blue .table-top,
+#blue .table-top3h {
+	background-color: white;
+	border-bottom: 3px solid #333;
+	color: black;
+	font-weight: bold;
+}
+
+#blue .row-dark {
+	/*background-color: transparent;*/
+	/*background-color: #EEEEEE;*/
+	background-color: white;
+}
+
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberlive .tabbertabhide {
+	display: none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+}
+
+.tabberlive {
+	margin-top: 1em;
+	text-align: left;
+	width: 70%;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+.tabbernav {
+	margin: 0;
+	padding: 0 3px ;
+	border-bottom: 0px solid #778;
+	font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernav {
+	margin: 0;
+	max-width: 100%;
+}
+
+.tabbernav li {
+	list-style: none;
+	min-height: 40px;
+	margin: 0;
+	margin-right: 3px;
+	max-width: 30%;
+	display: inline;
+}
+
+h2 {
+	height: 40px;
+}
+
+.tabbernav li a {
+	background: white;
+	padding: 3px 0.5em;
+	min-height: 40px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	/*margin-left: 3px;*/
+	border: 1px solid #778;
+	border-bottom: none;
+	/* background-color: #AAA;  */
+	text-decoration: none;
+	color: black;
+}
+
+/*
+ul.tabbernav li a:link {
+	color: #448;
+}
+
+ul.tabbernav li a:visited {
+	color: #667;
+}
+*/
+
+.tabbernav li a:hover {
+	color: #000;
+	background: white;
+	border-bottom: none;
+}
+
+.tabbernav li.tabberactive a {
+	/*  background-color: #fff; */
+	border-bottom: none;
+	color: white;
+	height: 40px;
+}
+
+/*--------------------------------------------------
+.tabbertab = the tab content
+Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+	padding: 3px;
+	border: 0px solid #aaa;
+	/* height: 500px; */
+	overflow: auto;
+	border-top: 0;
+
+	/* If you don't want the tab size changing whenever a tab is changed, you can set a fixed height */
+	/* height: 200px; */
+
+	/* If you set a fix height set overflow to auto and you will get a scrollbar when necessary */
+	/* overflow: auto; */
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+	display: none;
+}
+
+.tabberlive .tabbertab h3 {
+	display: none;
+}
+
+/*
+ul.tabbernav li.tabberactive a:hover {
+	color: #000;
+	background: white;
+	border-bottom: none;
+}*/
+
+#credit {
+	margin: 10px auto;
+	text-align: center;
+	width: 70%;
+}
+
+/* 3H */
+.table-top3h td:nth-child(2),
+.table-top3h td:nth-child(3),
+.table-top3h td:nth-child(4),
+.table-top3h td:nth-child(5),
+.table-top3h td:nth-child(6) {
+	border-left: 1px solid #000;
+}
+
+.table-top3h td {
+	border-bottom: 1px solid #000;
+}
+
+.tr3hRow td:nth-child(2),
+.tr3hRow td:nth-child(2),
+.tr3hRow td:nth-child(4),
+.tr3hRow td:nth-child(4),
+.tr3hRow td:nth-child(5),
+.tr3hRow td:nth-child(5),
+.tr3hRow td:nth-child(6),
+.tr3hRow td:nth-child(6),
+.tr3hRow td:nth-child(8),
+.tr3hRow td:nth-child(8) {
+	border-left: 1px solid #ccc;
+}
+
+.tr3hRow:nth-child(2) td,
+.tr3hRow:nth-child(2) td,
+.tr3hRow:nth-child(3),
+.tr3hRow:nth-child(3),
+.tr3hRow:nth-child(4),
+.tr3hRow:nth-child(4),
+.tr3hRow:nth-child(5),
+.tr3hRow:nth-child(5),
+.tr3hRow:nth-child(6),
+.tr3hRow:nth-child(6),
+.tr3hRow:nth-child(7),
+.tr3hRow:nth-child(7),
+.tr3hRow:nth-child(8),
+.tr3hRow:nth-child(8) {
+	border-top: 1px solid #ccc;
+}
+
+.tr3hRow td,
+.tr3hRow td {
+	border-bottom: 1px solid #ccc;
+	padding: 0;
+}
+
+.period3h {
+	color: #1e73be;
+}
+
+.mobile-td-data-temperature-1,
+.mobile-td-data-temperature-2,
+.mobile-td-arrow-wind-1,
+.mobile-td-arrow-wind-2,
+.mobile-td-data-wind-text_1,
+.mobile-td-data-wind-text_2,
+.mobile-td-day-hours,
+.mobile-td-data-weather,
+.mobile-td-data-wind,
+.mobile-td-data-baro {
+	padding: 5px;
+}
+
+.mobile-td-data-icons-1,
+.mobile-td-data-icons-2,
+.mobile-td-rain,
+.mobile-td-data-temperature-1,
+.mobile-td-data-temperature-2,
+.mobile-td-arrow-wind-1,
+.mobile-td-arrow-wind-2,
+.mobile-td-data-wind-text_1,
+.mobile-td-data-wind-text_2,
+.mobile-td-data-weather,
+.mobile-td-data-wind,
+.mobile-td-data-wind-text,
+.mobile-td-data-baro {
+	border-left: 1px solid #ccc;
+}
+
+.mobile-td-period-2,
+.mobile-td-data-icons-2,
+.mobile-td-data-temperature-2,
+.mobile-td-arrow-wind-2,
+.mobile-td-data-wind-text_2 {
+	border-top: 1px solid #000;
+}
+
+.mobile-td-day-hours {
+	color: #1e73be;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.mobileYrno6hTable_1 th,
+.mobileYrno6hTable th,
+.mobileYrno3hTable_1 th,
+.mobileYrno3hTable th {
+	border-bottom: 1px solid #000;
+}
+
+.mobile3htr-Top,
+.mobile3htr-Bottom {
+	background-color: white;
+}
+
+.mobile3hPeriod {
+	color: #1e73be;
+}
+
+.mobile3htr-Top td {
+	border-top: 1px solid #000;
+}
+
+.mobile3htr-Top td:nth-child(1) {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.mobile3htr-Top td:nth-child(2),
+.mobile3htr-Top td:nth-child(3),
+.mobile3htr-Top td:nth-child(4),
+.mobile3htr-Top td:nth-child(5),
+.mobile3htr-Bottom td:nth-child(2),
+.mobile3htr-Bottom td:nth-child(3),
+.mobile3htr-Bottom td:nth-child(4),
+.mobile3htr-Bottom td:nth-child(5) {
+	border-left: 1px solid #ccc;
+}
+
+/* # Media Queries
+----------------------------------------------------------------------- */
+
+/* CAMERASKI MEDIA ONLY ----------------------------------------------- */
+
+@media only screen and (max-width: 1600px) {
+
+	.entry-content {
+		margin: 0 auto;
+		max-width: 1600px;
+	}
+
+	.entry-header {
+		/*margin: 0 auto;*/
+		max-width: 1600px;
+	}
+	
+}
+
+@media only screen and (max-width: 1440px) {
+
+	.entry-content,
+	.entry-header {
+		max-width: 1440px;
+	}
+
+	.webcams-one-fourth {
+		max-width: 24.19%;
+	}
+	
+}
+
+@media only screen and (max-width: 1360px) {
+
+	/* SKIREV */
+	.entry-content,
+	.entry-header {
+		max-width: 1360px;
+	}
+	/* /SKIREV */
+	
+	.overview-slopes-map {
+		width: 38%;
+	}
+
+	.webcams-one-fourth {
+		max-width: 24.18%;
+	}
+	
+}
+
+@media only screen and (max-width: 1320px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 1320px;
+	}
+	
+	.overview-slopes-map {
+		width: 37%;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+		font-size: 12px;
+	}
+	
+}
+
+@media only screen and (max-width: 1280px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 1280px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+		font-size: 12px;
+	}
+	
+}
+
+@media only screen and (max-width: 1220px) {
+	
+	/*.entry {
+		padding: 10px 10px;
+	}*/
+
+	#entry-webcams {
+        padding: 10px 5px;
+    }
+	
+	.entry-content,
+	.entry-header {
+		max-width: 1220px;
+	}
+
+	.flexbox-top {
+		flex-wrap: wrap;
+	}
+
+	.one-fifth,
+	.two-fifths {
+		width: 49.583333333333%;
+	}
+	
+	.three-fifths {
+		background: none;
+		border-bottom: none;
+		box-shadow: none;
+		float: left;
+		background-color: url("images/main_bg.png") repeat;
+		width: 100%;
+	}
+
+	/* FLEXBOX 2 */
+	.three-fifths {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		overflow: hidden;
+	}
+	
+	.four-fifths,
+	.five-fifths	{
+		background:#ffffff;
+		background: -webkit-linear-gradient(top, #ffffff, #f6f6f6);
+		background:    -moz-linear-gradient(top, #ffffff, #f6f6f6);
+		background:     -ms-linear-gradient(top, #ffffff, #f6f6f6);
+		background:      -o-linear-gradient(top, #ffffff, #f6f6f6);
+		border-bottom: 1px solid #d7d7d7;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+		float: left;
+		width: 49.583333333333%;
+	}
+	
+	.five-fifths {
+		float: left;
+		margin-left: 0.83333333333333%;
+	}
+	
+	/* Estil P (pàrraf) on hi ha la imatge de la WebCam */
+	.main-webcam-image {
+		margin: 5px 5px auto;
+		margin-bottom: 10px;
+	}
+	
+	#overview-central-tabs p {
+	margin: 0 20px 5px;
+	text-align: center;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 130px;
+	}
+	
+	#overview-top-right {
+		margin: 10px 0 0;
+	}
+	
+	.overview-slopes-map {
+		margin-left: 5px;
+		margin-top: 10px;
+		width: 41%;
+	}
+	
+	#overview-right-tabs-1 ul.ul-overview-elevation {
+		margin: 0 0 10px 5px;
+	}
+
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors {
+		margin-right: 5px;
+		margin-top: 10px;
+	}
+	
+	.entry-content ul.ul-overview-other-slopes {
+		margin: 0 5px 0 0;
+	}
+
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks	{
+		font-size: 13px;
+	}
+	
+	#overview-right-tabs-2 ul.overview-pricing {
+		margin: 0 0 5px 10px;
+	}
+	
+	#overview-bottom-right {
+		margin-left: 0.833333%;
+	}
+	
+	.webcams-one-fourth {
+			max-width: 24.15%;
+	}
+	
+}
+
+@media only screen and (max-width: 1152px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 1152px;
+	}
+
+	.webcams-one-fourth {
+			max-width: 24.05%;
+	}
+	
+}
+
+@media only screen and (max-width: 1080px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 1080px;
+	}
+	
+	#overview-top-right {
+		margin: 5px 0 0;
+	}
+	
+	.overview-slopes-map {
+		margin-top: 10px;
+		width: 37%;
+	}
+	
+	#overview-right-tabs-2 ul.ul-overview-elevation {
+		display: none;
+	}
+	
+	.entry-content ul.ul-overview-elevation-narrow {
+		margin: 0 0 0 5px;
+	}
+
+	.ul-overview-elevation-narrow {
+		display: block;
+		float: left;
+		text-align: left;
+		font-size: 12px;
+		width: 100%;
+	}
+	
+	#overview-bottom-left,
+	#overview-bottom-right {
+		margin-top: 5px;
+	}
+
+	.webcams-one-fourth {
+			max-width: 23.95%;
+	}
+
+	.tabberlive {
+		width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 1024px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 100px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks	{
+		font-size: 12px;
+	}
+
+	.webcams-one-fourth {
+			max-width: 23.9%;
+	}
+	
+}
+
+@media only screen and (max-width: 960px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 960px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 80px;
+	}
+	
+	.entry-content ul.ul-overview-elevation-narrow {
+		margin: 20px 0 0 5px;
+	}
+	
+	#overview-right-tabs-2 ul.overview-lifts-line-1,
+	#overview-right-tabs-2 ul.overview-lifts-line-2,
+	#overview-right-tabs-2 ul.overview-lift-totals {
+		float: left;
+		font-size: 12px;
+		margin: 10px 0 0 10px;
+		width: 100%;
+	}
+	
+	#overview-right-tabs-2 ul.overview-pricing {
+		width: 100%;
+	}
+
+	#overview-right-tabs-2 ul.overview-pricing li.end-of-prices-tab {
+		margin: 0;
+	}
+	
+	/* FLEXBOX-BOTTOM */
+	.flexbox-bottom {
+		flex-wrap: wrap;
+	}
+
+	.one-half {
+		margin: 0;
+		width: 100%;
+	}
+	
+	#overview-bottom-right {
+		margin: 0;
+	}
+
+	.webcams-one-fourth {
+			max-width: 23.85%;
+	}
+	
+}
+
+@media only screen and (max-width: 932px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 932px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 50px;
+	}
+	
+	.overview-slopes-map {
+		margin-top: 10px;
+		width: 34%;
+	}
+	
+	.entry-content ul.overview-slopes-colors {
+		width: 63%;
+	}
+
+}
+
+@media only screen and (max-width: 885px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 885px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 30px;
+	}
+	
+}
+
+@media only screen and (max-width: 835px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 835px;
+	}
+	
+	/*.entry-content ul.ul-overview-other-slopes {
+		width: 100%;
+	}*/
+
+	.period3h {
+		font-size: 1.2rem;
+    }
+	
+}
+
+@media only screen and (max-width: 810px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 810px;
+	}
+	
+}
+
+@media only screen and (max-width: 800px) {
+	
+	.entry {
+		padding: 10px 20px;
+	}
+
+	#entry-meteo-weather {
+		padding: 10px 5px;
+    }
+	
+	.entry-content,
+	.entry-header {
+		max-width: 800px;
+	}
+	
+	/*.flexbox-top .two-fifths {
+		-webkit-flex-basis: 100%;
+		-ms-flex-basis: 100%;
+		flex-basis: 100%;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
+	}
+
+	.flexbox-top .one-fifth {
+		-webkit-flex-basis: 100%;
+		-ms-flex-basis: 100%;
+		flex-basis: 100%;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
+	}
+
+	.three-fifths .four-fifths,
+	.three-fifths .five-fifths {
+		flex: 1;
+	}
+
+	.three-fifths .four-fifths {
+		-webkit-flex-basis: 100%;
+		-ms-flex-basis: 100%;
+		flex-basis: 100%;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
+	}
+
+	.three-fifths .five-fifths {
+		-webkit-flex-basis: 100%;
+		-ms-flex-basis: 100%;
+		flex-basis: 100%;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
+	}*/
+	
+	.one-fifth,
+	.two-fifths,
+	.four-fifths,
+	.five-fifths {
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 230px;
+	}
+	
+	#overview-top-right .overview-clear {
+		clear: both;
+	}
+	
+	#overview-top-right {
+		margin: 0;
+	}
+	
+	.overview-slopes-map {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors {
+		margin-top: 10px;
+	}
+	
+	.entry-content ul.ul-overview-elevation-narrow {
+		margin: 10px 0 0 15px;
+	}
+	
+	.overview-slopes-map {
+		margin-left: 15px;
+		width: 30%;
+	}
+	
+	#overview-right-tabs-1 ul.ul-overview-elevation {
+		margin: 0 0 5px 15px;
+		width: 40%;
+	}
+		
+	#overview-right-tabs-1 ul.overview-slopes-colors {
+		margin-right: 15px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+		font-size: 14px;
+		line-height: 1.325;
+	}
+	
+	.entry-content ul.ul-overview-other-slopes {
+		margin: 0 15px 0 0;
+		width: 50%;
+	}
+	
+	#overview-right-tabs-2 ul.overview-lifts {
+		margin-top: 10px;
+	}
+  
+  	.flexbox-webcam {
+		flex-wrap: wrap;
+	}
+
+	.webcams-one-fourth {
+		/*max-width: 48.5416666667%;*/
+		max-width: 48.6%;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 768px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 200px;
+	}
+
+	.webcams-one-fourth {
+		max-width: 48.4%;
+	}
+	
+}
+
+@media (min-width: 680px) {
+	
+	.mobileYrno6hTable_1,
+	.mobileYrno6hTable,
+	.mobileYrno3hTable_1,
+	.mobileYrno3hTable {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 680px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 680px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 140px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks	{
+		font-size: 13px;
+	}
+	
+	.entry-content ul.ul-overview-elevation-narrow {
+		margin: 0 0 0 15px;
+	}
+
+	.webcams-one-fourth {
+		max-width: 48.1%;
+	}
+
+	.yrno6hTable_1,
+	.yrno6hTable,
+	.yrno3hTable_1,
+	.yrno3hTable
+	.table-top3h {
+		display: none;
+	}
+	
+}
+
+@media only screen and (max-width: 568px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 568px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 100px;
+	}
+	
+	.entry-content ul.ul-overview-elevation-narrow {
+		margin-left: 5px;
+	}
+	
+	.overview-slopes-map {
+		margin-left: 5px;
+		width: 30%;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors {
+		margin-right: 5px;
+	}
+	
+	.entry-content ul.ul-overview-other-slopes {
+		margin: 0 5px 0 0;
+		width: 55%;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+		font-size: 12px;
+	}
+
+	.webcams-one-fourth {
+		max-width: 47.9%;
+	}
+	
+}
+
+@media only screen and (max-width: 520px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 520px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 60px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+		font-size: 12px;
+	}
+
+	.webcams-one-fourth {
+		max-width: 47.8%;
+	
+}
+
+@media screen and (min-width: 481px) {
+	
+	.mobileOverviewTable {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 481px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 481px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 20px;
+	}
+  	
+  	.overviewTable {
+		display: none;
+	}
+
+	.mobileOverviewTable {
+		display: table;
+	}
+
+	.webcams-one-fourth {
+		max-width: 47.6%;
+
+	/*.tabbernav li:nth-child(1) {
+		display: none;
+	}*/
+		
+}
+
+@media only screen and (max-width: 430px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 430px;
+	}
+	
+	#overview-central-tabs ul#ul-today li.open-lifts,
+	#overview-central-tabs ul#ul-today li.open-slopes,
+	#overview-central-tabs ul#ul-today li.open-length,
+	#overview-central-tabs ul#ul-today li.snow-depth,
+	#overview-central-tabs ul#ul-today li.snow-type {
+		margin: 0 0 0 5px;
+	}
+	
+	.mobile-tr-bottom td:nth-child(1) {
+		padding-left: 5px;
+    }
+
+	.webcams-one-fourth {
+		max-width: 47.4%;
+	
+}
+
+@media only screen and (max-width: 415px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 415px;
+	}
+	
+	.overview-slopes-map {
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	.overview-slopes-map p {
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	.entry-content ul.overview-slopes-colors {
+		margin: 10px 20px 10px 10px;
+		text-align: right;
+		width: 100%;
+	}
+	
+	.entry-content ul.ul-overview-other-slopes {
+		margin: 10px 20px 0 10px;
+		text-align: right;
+		width: 100%;
+	}
+	
+	#overview-right-tabs-1 ul.ul-overview-elevation {
+		margin-left: 10px;
+		margin-top: 10px;
+		text-align: left;
+		width: 100%;
+	}
+		
+	#overview-right-tabs-1 ul.overview-slopes-colors {
+		margin: 0 20px 0 10px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+		font-size: 12px;
+		margin-left: 10px;
+		text-align: right;
+	}
+	
+	#overview-right-tabs-1 ul.overview-other-slopes {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+
+	.webcams-one-fourth {
+		max-width: 46.8%;
+	
+	td.mobile-td-period-1,
+	td.mobile-td-period-2 {
+		font-size: 1.2rem;
+	}
+	
+}
+
+@media only screen and (max-width: 340px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 340px;
+	}
+		
+	.entry-content ul.overview-slopes-colors {
+		margin: 10px 10px 10px 10px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-green,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-blue,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-red,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-black,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-nordic-tracks,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-ski-routes,
+	#overview-right-tabs-1 ul.overview-slopes-colors li.overview-total-slopes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-ski-routes,
+	#overview-right-tabs-1 ul.ul-overview-other-slopes li.overview-nordic-tracks {
+		margin-right: 10px;
+	}
+		
+	.entry-content ul.ul-overview-other-slopes {
+		margin: 10px 10px 0 10px;
+	}
+	
+	#overview-right-tabs-1 ul.overview-slopes-colors {
+		margin: 0 10px 0 10px;
+	}
+
+	ul.tabbernav li:nth-child(2),
+	ul.tabbernav li:nth-child(3) {
+		display: none;
+    }
+
+	.webcams-one-fourth {
+		max-width: 100%;
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+	.entry-content,
+	.entry-header {
+		max-width: 320px;
+	}
+			
+}
