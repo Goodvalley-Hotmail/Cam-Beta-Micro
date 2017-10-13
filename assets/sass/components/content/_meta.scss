@@ -1,0 +1,38 @@
+/* ## Entry Meta
+--------------------------------------------- */
+
+p.entry-meta {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.entry-header {
+  background-color: #fff;
+  background: -webkit-linear-gradient(top, #ffffff, #f6f6f6);
+  background:    -moz-linear-gradient(top, #ffffff, #f6f6f6);
+  background:     -ms-linear-gradient(top, #ffffff, #f6f6f6);
+  background:      -o-linear-gradient(top, #ffffff, #f6f6f6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 0 0 5px;
+  padding: 5px 10px 0;
+}
+
+.entry-header .entry-meta {
+  margin-bottom: 5px; /* CAMSKI -> Original: 24px */
+}
+
+.entry-footer .entry-meta {
+  border-top: 1px solid #eee;
+  padding-top: 24px;
+}
+
+.entry-categories,
+.entry-tags {
+  display: block;
+}
+
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px;
+}

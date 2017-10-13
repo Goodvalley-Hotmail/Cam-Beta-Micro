@@ -6,14 +6,40 @@ $base__color: #333;
 $link__color: #c3251d;
 $link__hoverColor: #333;
 
-$body__backgroundColor: #eee;
+//
+// Navigation Colors
+//==========================================
+$nav__LinkColor: #333;
+$nav__HoverColor: #c3251d;
+$submenu__LinkBackgroundColor: $white;
+$submenu__BorderColor: #eee;
 
-$nav__LinkColor: #000;
 $primaryNav__BackgroundColor: #1E73BE;
 $primaryNav__LinkColor: $nav__LinkColor;
+$primaryNav__BorderColor: #eee;
+
 $secondaryNav__BackgroundColor: $white;
 $secondaryNav__LinkColor: $nav__LinkColor;
+$secondaryNav__BorderColor: #eee;
 
+$jsNav__BackgroundColor: $white;
+$jsNav__HoverLinkColor: $black;
+$jsNav__FocusLinkColor: #c3251d;
+
+$navToggle__BackgroundColor: $white;
+$navToggle__TextColor: #333;
+
+$archivePagination__BackgroundColor: $white;
+$archivePagination__TextColor: #333;
+$archivePagination__HoverBackgroundColor: #c3251d;
+$archivePagination__HoverTextColor: $white;
+
+$body__backgroundColor: #eee;
+
+//
+// Navigation Colors
+//==========================================
 $siteHeader__BackgroundColor: #1E73BE;
 
-$siteFooter__BackgroundColor: $white; // CARLES - Falta comprovar.
+$siteFooter__BackgroundColor: linear-gradient(top, #ffffff, #b5b5b5);
+$footerWidgets__BackgroundColor: $white;

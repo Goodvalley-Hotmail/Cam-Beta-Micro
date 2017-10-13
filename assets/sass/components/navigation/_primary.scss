@@ -1,4 +1,4 @@
-/* ## (Primary) After Header Navigation
+/* ## Primary Navigation
 --------------------------------------------- */
 
 /* SKIREV
@@ -9,18 +9,20 @@
 
 /* SKIREV */
 .nav-primary {
-  background-color: $primaryNav__BackgroundColor;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+    background-color: $primaryNav__BackgroundColor;
+    border-top: 1px solid $primaryNav__BorderColor;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    li a {
+        color: $primaryNav__LinkColor;
+    }
+
+    a:last-of-type {
+        padding-right: 0;
+    }
+
 }
 
-.nav-primary li a {
-  color: $primaryNav__LinkColor;
-}
-/* /SKIREV */
-
-/* SKIREV */
-.nav-primary a:last-of-type {
-  padding-right: 0;
-}
 /* /SKIREV */

@@ -1,0 +1,40 @@
+/* ## Entries
+--------------------------------------------- */
+
+.entry {
+  background-color: #fff;
+  margin-bottom: 0; /* SKIREV Anterior: 40px; */
+  padding: 5px 10px; /* SKIREV Anterior: padding: 70px 80px; */
+}
+
+.content .entry {
+  background: url("images/main_bg.png") repeat; /* SKIREV Anterior: background-color: #fff; */
+}
+
+.entry-content {
+
+  ol,
+  ul {
+    margin-bottom: 28px;
+    margin-left: 40px;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+  ul > li {
+    list-style-type: disc;
+  }
+
+  ol ol,
+  ul ul {
+    margin-bottom: 0;
+  }
+
+  code {
+    background-color: #333;
+    color: #eee;
+  }
+
+}

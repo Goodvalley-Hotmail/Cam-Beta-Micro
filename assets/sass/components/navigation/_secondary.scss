@@ -2,8 +2,9 @@
 --------------------------------------------- */
 
 .nav-secondary {
-  background-color: $secondaryNav__BackgroundColor;
-  /* SKIREV */
-  padding-left: 40px;
-  /* /SKIREV */
+    background-color: $secondaryNav__BackgroundColor;
+    border-top: 1px solid $secondaryNav__BorderColor;
+    /* SKIREV */
+    padding-left: 40px;
+    /* /SKIREV */
 }
