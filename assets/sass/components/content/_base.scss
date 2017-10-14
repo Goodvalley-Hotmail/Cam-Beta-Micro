@@ -1,0 +1,22 @@
+//
+// Main Entry Article
+//==========================================
+
+.content .entry {
+    background: url("images/main_bg.png") repeat; /* SKIREV Anterior: background-color: #fff; */
+}
+
+.entry {
+
+    background-color: $entry__BackgroundColor;
+    margin-bottom: 0;
+    padding: 5px 10px;
+
+    @media only screen and (max-width: 860px) {
+
+        padding: 30px;
+        margin-bottom: 5%;
+
+    }
+
+}

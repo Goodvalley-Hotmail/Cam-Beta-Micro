@@ -1,44 +1,7 @@
-/* ## Titles
---------------------------------------------- */
-
 .archive-description .entry-title,
 .archive-title,
 .author-box-title {
     font-size: 26px; /* CAMSKI -> Original: 20px */
     font-size: 2.6rem; /* CAMSKI -> Original: 2rem */
     font-weight: bold; /* CAMSKI */
-}
-
-.archive-description h1 {
-    color: #000;
-}
-
-.entry-title {
-    font-size:  26px; /* SKIREV Anterior: 36px; */
-    font-size: 2.6rem; /* SKIREV Anterior: 3.6rem */
-    font-weight: bold; /* CAMSKI */
-}
-
-/* CAMSKI 2017-03-20 */
-#archive-entry-title-attr {
-    font-size: 20px;
-    font-size: 2rem;
-}
-/* / CAMSKI 2017-03-20 */
-
-.entry-title a,
-.sidebar .widget-title a {
-    color: #333;
-    text-decoration: none;
-}
-
-.entry-title a:hover,
-.entry-title a:focus {
-    color: #c3251d;
-}
-
-.widget-title {
-    font-size: 18px;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
 }
