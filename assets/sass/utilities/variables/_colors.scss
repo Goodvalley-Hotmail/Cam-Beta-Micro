@@ -1,10 +1,15 @@
 $white: #fff;
 $black: #000;
 
+//
+// General Colors
+//==========================================
 $base__color: #333;
 
 $link__color: #c3251d;
 $link__hoverColor: #333;
+
+$body__backgroundColor: #eee;
 
 //
 // Header Colors
@@ -40,7 +45,9 @@ $archivePagination__TextColor: #333;
 $archivePagination__HoverBackgroundColor: #c3251d;
 $archivePagination__HoverTextColor: $white;
 
-$body__backgroundColor: #eee;
-
+//
+// Site Footer Colors
+//==========================================
 $siteFooter__BackgroundColor: linear-gradient(top, #ffffff, #b5b5b5);
+$siteFooter__BorderColor: #eee;
 $footerWidgets__BackgroundColor: $white;

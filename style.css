@@ -367,15 +367,9 @@ ul.tabbernav {
 		width: 300px;
 	}
 
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3 {
-		width: 340px;
-	}
 
-	.footer-widgets-1 {
-		margin-right: 60px;
-	}
+
+
 
 }
 
@@ -399,15 +393,9 @@ ul.tabbernav {
 		width: 400px;
 	}
 
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3 {
-		width: 300px;
-	}
 
-	.footer-widgets-1 {
-		margin-right: 30px;
-	}
+
+
 
 }
 
@@ -416,9 +404,6 @@ ul.tabbernav {
 	.content,
 	.content-sidebar-sidebar .content,
 	.content-sidebar-sidebar .content-sidebar-wrap,
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
 	.sidebar-content-sidebar .content,
 	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-primary,
@@ -452,10 +437,7 @@ ul.tabbernav {
 
 
 
-	.footer-widgets-1,
-	.footer-widgets-2 {
-		margin: 0 auto 40px;
-	}
+
 
 }
 
