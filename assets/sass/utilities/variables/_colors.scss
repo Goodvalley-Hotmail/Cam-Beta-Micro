@@ -7,6 +7,12 @@ $link__color: #c3251d;
 $link__hoverColor: #333;
 
 //
+// Header Colors
+//==========================================
+$siteHeader__BackgroundColor: #1E73BE;
+$siteTitle__LinkTextColor: #333;
+
+//
 // Navigation Colors
 //==========================================
 $nav__LinkColor: #333;
@@ -35,11 +41,6 @@ $archivePagination__HoverBackgroundColor: #c3251d;
 $archivePagination__HoverTextColor: $white;
 
 $body__backgroundColor: #eee;
-
-//
-// Navigation Colors
-//==========================================
-$siteHeader__BackgroundColor: #1E73BE;
 
 $siteFooter__BackgroundColor: linear-gradient(top, #ffffff, #b5b5b5);
 $footerWidgets__BackgroundColor: $white;

@@ -2,7 +2,20 @@
 --------------------------------------------- */
 
 .site-header .widget-area {
-  float: right;
-  text-align: right;
-  width: 800px;
+    float: right;
+    text-align: right;
+    width: $headerRight__Width;
+
+    @media only screen and (max-width: 1200px) {
+
+        width: $headerRight__LaptopWidth;
+
+    }
+
+    @media only screen and (max-width: 1023px) {
+
+        width: 100%;
+
+    }
+
 }

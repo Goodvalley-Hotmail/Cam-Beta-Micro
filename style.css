@@ -425,15 +425,11 @@ ul.tabbernav {
 	.sidebar-secondary,
 	.sidebar-sidebar-content .content,
 	.sidebar-sidebar-content .content-sidebar-wrap,
-	.site-header .widget-area,
-	.title-area {
+	.site-header .widget-area {
 		width: 100%;
 	}
 
-	.site-header .wrap {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
+
 
 	.header-image .title-area,
 	.site-header .search-form {
@@ -447,9 +443,6 @@ ul.tabbernav {
 		text-align: center;
 	}
 
-	.site-header .search-form {
-		margin: 16px auto;
-	}
 
 
 

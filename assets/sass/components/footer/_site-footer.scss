@@ -3,23 +3,23 @@
 
 .site-footer {
 
-  /* SKIREVIEWER */
-  /*background: -webkit-linear-gradient(top, #ffffff, #b5b5b5);
-  background: -moz-linear-gradient(top, #ffffff, #b5b5b5);
-  background: -ms-linear-gradient(top, #ffffff, #b5b5b5);
-  background: -o-linear-gradient(top, #ffffff, #b5b5b5);*/
-  background: $siteFooter__BackgroundColor;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  /* SKIREV Anterior background-color: #fff; */
-  border-top: 1px solid #eee;
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1;
-  padding: 60px 0;
-  text-align: center;
+    /* SKIREVIEWER */
+    /*background: -webkit-linear-gradient(top, #ffffff, #b5b5b5);
+    background: -moz-linear-gradient(top, #ffffff, #b5b5b5);
+    background: -ms-linear-gradient(top, #ffffff, #b5b5b5);
+    background: -o-linear-gradient(top, #ffffff, #b5b5b5);*/
+    background: $siteFooter__BackgroundColor;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    /* SKIREV Anterior background-color: #fff; */
+    border-top: 1px solid #eee;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 60px 0;
+    text-align: center;
 
-  p {
-    margin-bottom: 0;
-  }
+    p {
+        margin-bottom: 0;
+    }
 
 }
