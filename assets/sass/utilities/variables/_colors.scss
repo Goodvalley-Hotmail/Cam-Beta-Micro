@@ -2,7 +2,7 @@ $white: #fff;
 $black: #000;
 
 //
-// General Colors
+// General
 //==========================================
 $base__color: #333;
 
@@ -12,13 +12,13 @@ $link__hoverColor: #333;
 $body__backgroundColor: #eee;
 
 //
-// Header Colors
+// Header
 //==========================================
 $siteHeader__BackgroundColor: #1E73BE;
 $siteTitle__LinkTextColor: #333;
 
 //
-// Navigation Colors
+// Navigation
 //==========================================
 $nav__LinkColor: #333;
 $nav__HoverColor: #c3251d;
@@ -46,14 +46,14 @@ $archivePagination__HoverBackgroundColor: #c3251d;
 $archivePagination__HoverTextColor: $white;
 
 //
-// Site Footer Colors
+// Site Footer
 //==========================================
 $siteFooter__BackgroundColor: linear-gradient(top, #ffffff, #b5b5b5);
 $siteFooter__BorderColor: #eee;
 $footerWidgets__BackgroundColor: $white;
 
 //
-// Entry Content Colors
+// Entry Content
 //==========================================
 $entryFooter__Meta__BorderColor: #eee;
 $entry__BackgroundColor: $white;
@@ -63,3 +63,8 @@ $entryTitle__LinkColor: #333;
 $entryTitle__HoverColor: #c3251d;
 $entryContent__Code__BackgroundColor: #333;
 $entryContent__Code__TextColor: #eee;
+
+//
+// Comments
+//==========================================
+$comment__BackgroundColor: $white;
