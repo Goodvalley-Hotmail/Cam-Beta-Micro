@@ -3,57 +3,68 @@
 
 .site-inner,
 .wrap {
-  margin: 0 auto;
-  max-width: none; /* SKIREV Anterior: max-width: 1280px; */
+    margin: 0 auto;
+    max-width: $maxWidth; /* SKIREV Anterior: max-width: 1280px; */
 
-  /* CAMERASKI -> NOT */
-  @media only screen and (max-width: 1340px) {
+    /* CAMERASKI -> NOT */
+    @media only screen and (max-width: $_1340) {
 
-    max-width: 1140px;
+        max-width: $maxWidth__1340;
 
-  }
+    }
 
-  @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: $_1200) {
 
-    max-width: 960px;
+        max-width: $maxWidth__1200;
 
-  }
+    }
 
-  @media only screen and (max-width: 1023px) {
+    @media only screen and (max-width: $_1023) {
 
-    max-width: 800px;
+        max-width: $maxWidth__1023;
 
-  }
-  /* / CAMERASKI -> NOT */
+    }
+    /* / CAMERASKI -> NOT */
 
 }
 
 .site-inner {
 
-  clear: both;
-  /* SKIREV */
-  max-width: none;
-  /* /SKIREV */
-  padding-top: 0; /* SKIREV Anterior: padding-top: 40px; */
-  word-wrap: break-word;
+    clear: both;
+    /* SKIREV */
+    max-width: none;
+    /* /SKIREV */
+    padding-top: 0; /* SKIREV Anterior: padding-top: 40px; */
+    word-wrap: break-word;
 
-  /* CAMERASKI -> NOT */
-  @media only screen and (max-width: 860px) {
+    /* CAMERASKI -> NOT */
+    @media only screen and (max-width: $_860) {
 
-    padding: 5% 5% 0;
+        padding: 5% 5% 0;
 
-  }
-  /* / CAMERASKI -> NOT */
+    }
+    /* / CAMERASKI -> NOT */
 
 }
 
+/* CAMERASKI -> NOT */
+@media only screen and (max-width: $_860) {
+
+    .wrap {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+/* / CAMERASKI -> NOT */
+
 /* SKIREV Only for FrontPage */
 .home .site-inner {
-  max-width: none;
-  padding-top: 0;
+    max-width: $maxWidth__Home;
+    padding-top: 0;
 }
 /* /SKIREV */
 
 .landing-page .site-inner {
-  max-width: 800px;
+    max-width: $maxWidth__LandingPage;
 }

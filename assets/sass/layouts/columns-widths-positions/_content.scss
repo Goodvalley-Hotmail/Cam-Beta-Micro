@@ -1,24 +1,46 @@
 /* ### Content */
 
 .content {
-  float: right;
-  width: 880px;
-}
 
-.content-sidebar .content,
-.content-sidebar-sidebar .content,
-.sidebar-content-sidebar .content {
-  float: left;
-}
+    float: right;
+    width: $content__Width;
 
-.content {
-  .content-sidebar-sidebar &,
-  .sidebar-content-sidebar &,
-  .sidebar-sidebar-content & {
-    width: 660px;
-  }
-}
+    /* CAMERASKI -> NOT */
+    @media only screen and (max-width: $_1340) {
+        width: $content__1340__Width;
+    }
 
-.full-width-content .content {
-  width: 100%;
+    @media only screen and (max-width: 1200px) {
+        width: $content__1200__Width;
+    }
+    /* / CAMERASKI -> NOT */
+
+    .content-sidebar-sidebar &,
+    .sidebar-content-sidebar &,
+    .sidebar-sidebar-content & {
+
+        width: $contentBothSidebars__Width;
+
+        /* CAMERASKI -> NOT */
+        @media only screen and (max-width: $_1340) {
+            width: $contentBothSidebars__1340__Width;
+        }
+
+        @media only screen and (max-width: $_1200) {
+            width: $contentBothSidebars__1200__Width;
+        }
+        /* / CAMERASKI -> NOT */
+
+    }
+
+    .content-sidebar &,
+    .content-sidebar-sidebar &,
+    .sidebar-content-sidebar & {
+        float: left;
+    }
+
+    .full-width-content & {
+        width: 100%;
+    }
+
 }
