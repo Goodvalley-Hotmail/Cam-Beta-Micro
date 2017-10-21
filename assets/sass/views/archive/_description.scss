@@ -1,0 +1,21 @@
+.archive-description {
+
+    background-color: $archiveDescription__BackgroundColor;
+    font-size: rem( $archiveDescription__FontSize );
+    margin: 10px 0; /* CAMSKI -> Original: 40px */
+    padding: 10px 10px 10px 20px; /* CAMSKI -> Original: 60px */
+
+    @media only screen and (max-width: $_860) {
+        padding: 30px;
+        margin-bottom: 5%;
+    }
+
+    h1 {
+        color: #000;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+}

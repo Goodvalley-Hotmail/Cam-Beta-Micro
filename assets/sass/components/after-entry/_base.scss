@@ -1,0 +1,13 @@
+.after-entry {
+
+    background-color: $afterEntry__BackgroundColor;
+    font-size: rem( $afterEntry__FontSize );
+    margin: 10px 0; /* CAMSKI -> Original: 40px */
+    padding: 10px 10px 10px 20px; /* CAMSKI -> Original: 60px */
+
+    @media only screen and (max-width: $_860) {
+        padding: 30px;
+        margin-bottom: 5%;
+    }
+
+}

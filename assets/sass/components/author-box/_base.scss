@@ -1,0 +1,22 @@
+.author-box {
+
+    background-color: $authorBox__BackgroundColor;
+    font-size: rem( $authorBox__FontSize );
+    margin: 10px 0;
+    padding: 10px 10px 10px 20px;
+
+    @media only screen and (max-width: $_860) {
+        padding: 30px;
+        margin-bottom: 5%;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.author-box-title {
+    font-size: rem( $authorBox__Title__FontSize );
+    font-weight: bold; /* CAMSKI */
+}
