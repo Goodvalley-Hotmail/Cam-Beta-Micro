@@ -3,10 +3,10 @@
     .title-area {
 
         margin: 0 auto;
-        max-width: $title_Area__Width;
+        max-width: $title-area--width;
         padding: 10px 0; /* SKIREV Anterior: 0; */
 
-        @media only screen and (max-width: 1023px) {
+        @include media( $screen--1023 ) {
 
             float: none;
 
@@ -18,7 +18,7 @@
         background-position: center !important;
         background-size: contain !important;
         float: left;
-        min-height: $siteTitle__MinHeight;
+        min-height: $site-title--min-height;
         width: 100%;
     }
 

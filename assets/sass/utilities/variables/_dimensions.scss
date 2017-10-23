@@ -2,64 +2,64 @@
 // Dimension Variables
 //==========================================
 
-//$baseWidth: 1280;
+//$base--width: 1280;
 //$gutter: 40px;
 
 // Imagine that:
 //      1.- Content is 880px (68.75% of 1280).
 //      2.- Gutter is 40px.
 //      3.- Sidebar is 360px (28.125% of 1280).
-//      Total is 1280px, our $baseWidth.
+//      Total is 1280px, our $base--width.
 // Then, in Content Widths Section:
-// $content__Width: $baseWidth * 0.6875 + px;
-// $primarySidebar__Width: $maxWidth - $content__Width - $gutter;
+// $content--width: $base--width * 0.6875 + px;
+// $primary-sidebar--width: $max-width - $content--width - $gutter;
 // Or:
-// $primarySidebar__Width: $baseWidth * 0.28125 + px;
+// $primary-sidebar--width: $base--width * 0.28125 + px;
 
 //
 // Max Widths
 //==========================================
-$maxWidth: 1280px; // CameraSki: none
-$maxWidth__1340: 1140px;
-$maxWidth__1200: 960px;
-$maxWidth__1023: 800px;
-$maxWidth__Home: none;
-$maxWidth__LandingPage: 800px;
+$max-width: 1280px; // CameraSki: none
+$max-width--1340: 1140px;
+$max-width--1200: 960px;
+$max-width--1023: 800px;
+$max-width__home: none;
+$max-width__landing-page: 800px;
 
 // It goes Mobile First
-//$base-wrap-max-width: $maxWidth - 372px;
-//$wrap-max-width-medium: $maxWidth - 180px;
-//$wrap-max-width-large: $maxWidth;
+//$base-wrap-max-width: $max-width - 372px;
+//$wrap-max-width-medium: $max-width - 180px;
+//$wrap-max-width-large: $max-width;
 
 //
 // Content Widths
 //==========================================
-$content__Width: 880px;
-$content__1340__Width: 800px;
-$content__1200__Width: 620px;
+$content--width: 880px;
+$content--width--1340: 800px;
+$content--width--1200: 620px;
 
-$contentBothSidebars__Width: 660px;
-$contentBothSidebars__1340__Width: 580px;
-$contentBothSidebars__1200__Width: 400px;
+$content-both-sidebars--width: 660px;
+$content-both-sidebars--width--1340: 580px;
+$content-both-sidebars--width--1200: 400px;
 
-$primarySidebar__Width: 360px;
-$primarySidebar__1340__Width: 300px;
-$secondarySidebar__Width: 180px;
+$primary-sidebar--width: 360px;
+$primary-sidebar--width--1340: 300px;
+$secondary-sidebar--width: 180px;
 
-$contentSidebarWrap__Width: 1060px;
-$contentSidebarWrap__1340__Width: 920px;
-$contentSidebarWrap__1200__Width: 740px;
+$content-sidebar-wrap--width: 1060px;
+$content-sidebar-wrap--width--1340: 920px;
+$content-sidebar-wrap--width--1200: 740px;
 
 // Header Module
-$title_Area__Width: 300px;
-$siteTitle__MinHeight: 80px;
+$title-area--width: 300px;
+$site-title--min-height: 80px;
 
-$headerRight__Width: 800px;
-$headerRight__Width_1200: 800px;
-$headerRight__LaptopWidth: 620px;
+$header-right--width: 800px;
+$header-right--width--1200: 800px;
+$header-right--width--1340: 620px;
 
 // Footer Module
-$footerWidgets__Width: 380px;
-$footerWidgets__Width_1340: 340px;
-$footerWidgets__Width_1200: 300px;
-$footerWidgets__Width_1023: 100%;
+$footer-widgets--width: 380px;
+$footer-widgets--width--1340: 340px;
+$footer-widgets--width--1200: 300px;
+$footer-widgets--width--1023: 100%;

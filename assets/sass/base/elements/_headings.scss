@@ -7,13 +7,13 @@ h3,
 h4,
 h5,
 h6 {
-    color: $headings__TextColor;
-    font-family: $headings__FontFamily;
+    color: $headings--text-color;
+    font-family: $headings--font-family;
     font-weight: 400; /* SKIREV Anterior: 600; */
-    line-height: $headings__LineHeight;
+    line-height: $headings--line-height;
 }
 
-/* CAMSKI 2017-03-18 */
+/* CAMERASKI 2017-03-18 */
 h2,
 h3,
 h4,
@@ -21,30 +21,30 @@ h5,
 h6 {
     margin: 0 0 5px; /* SKIREV Anterior: 0 0 10px; */
 }
-/* / CAMSKI 2017-03-18 */
+/* / CAMERASKI 2017-03-18 */
 
 h1 {
-    font-size:  rem( $h1__FontSize );
-    margin: 0; /* CAMSKI 2017-03-18 */
-    padding: 0 0 5px; /* CAMSKI 2017-03-18 */
+    font-size:  rem( $h1--font-size );
+    margin: 0; /* CAMERASKI 2017-03-18 */
+    padding: 0 0 5px; /* CAMERASKI 2017-03-18 */
 }
 
 h2 {
-    font-size: rem( $h2__FontSize );
+    font-size: rem( $h2--font-size );
 }
 
 h3 {
-    font-size: rem( $h3__FontSize );
+    font-size: rem( $h3--font-size );
 }
 
 h4 {
-    font-size: rem( $h4__FontSize );
+    font-size: rem( $h4--font-size );
 }
 
 h5 {
-    font-size: rem( $h5__FontSize );
+    font-size: rem( $h5--font-size );
 }
 
 h6 {
-    font-size: rem( $h6__FontSize );
+    font-size: rem( $h6--font-size );
 }

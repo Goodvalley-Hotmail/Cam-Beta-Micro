@@ -3,7 +3,7 @@
 //==========================================
 
 /* CAMERASKI -> NOT */
-@media only screen and (max-width: 1023px) {
+@include media( $screen--1023 ) {
 
     .js {
 
@@ -91,18 +91,18 @@
         .nav-primary,
         nav button:focus,
         .menu-toggle:focus {
-            background-color: $jsNav__BackgroundColor;
+            background-color: $js-nav--background-color;
         }
 
         nav button:hover,
         .menu-toggle:hover,
         .nav-primary {
-            color: $jsNav__HoverLinkColor;
+            color: $js-nav--hover-link-color;
         }
 
         nav button:focus,
         .menu-toggle:focus {
-            color: $jsNav__FocusLinkColor;
+            color: $js-nav--focus-link-color;
         }
 
     }

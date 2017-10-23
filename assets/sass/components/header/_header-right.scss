@@ -4,15 +4,15 @@
 .site-header .widget-area {
     float: right;
     text-align: right;
-    width: $headerRight__Width;
+    width: $header-right--width;
 
-    @media only screen and (max-width: 1200px) {
+    @include media( $screen--1200 ) {
 
-        width: $headerRight__Width_1200;
+        width: $header-right--width--1200;
 
     }
 
-    @media only screen and (max-width: 1023px) {
+    @include media( $screen--1023 ) {
 
         width: 100%;
 

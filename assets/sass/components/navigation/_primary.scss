@@ -10,13 +10,13 @@
 /* SKIREV */
 .nav-primary {
 
-    background-color: $primaryNav__BackgroundColor;
-    border-top: 1px solid $primaryNav__BorderColor;
+    background-color: $primary-nav--background-color;
+    border-top: 1px solid $primary-nav--border-color;
     padding-top: 10px;
     padding-bottom: 10px;
 
     li a {
-        color: $primaryNav__LinkColor;
+        color: $primary-nav--link-color;
     }
 
     a:last-of-type {

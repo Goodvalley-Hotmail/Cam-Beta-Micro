@@ -3,10 +3,10 @@
 
 .site-footer {
 
-    background: $siteFooter__BackgroundColor;
+    background: $site-footer--background-color;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border-top: 1px solid $siteFooter__BorderColor;
-    font-size: rem( $siteFooter__FontSize );
+    border-top: 1px solid $site-footer--border-color;
+    font-size: rem( $site-footer--font-size );
     line-height: 1;
     padding: 60px 0;
     text-align: center;

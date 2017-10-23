@@ -3,26 +3,26 @@
 
 .sidebar .enews-widget {
 
-    background-color: $enewsWidget__Background__Color;
+    background-color: $enews-widget--background-color;
 
     &, .widget-title {
-        color: $enewsWidget__WidgetTitle__TextColor;
+        color: $enews-widget__widget-title--text-color;
     }
 
     input,
     input:focus {
-        border: 1px solid $enewsWidget__input__BorderColor;
+        border: 1px solid $enews-widget__input--border-color;
     }
 
     input[type="submit"] {
-        background-color: $enews__SubmitButton__BackgroundColor;
-        color: $enews__SubmitButton__TextColor;
+        background-color: $enews__submit-button--background-color;
+        color: $enews__submit-button--text-color;
     }
 
     input:hover[type="submit"],
     input:focus[type="submit"] {
-        background-color: $enews__SubmitButton__BackgroundHoverColor;
-        color: $enews__SubmitButton__HoverTextColor;
+        background-color: $enews__submit-button--background-hover-color;
+        color: $enews__submit-button--hover-text-color;
     }
 
 }
@@ -31,7 +31,7 @@
 
     input {
 
-        font-size: rem( $enews__FontSize );
+        font-size: rem( $enews--font-size );
         margin-bottom: 16px;
 
         &[type="submit"] {

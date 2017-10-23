@@ -1,4 +1,8 @@
 //
-// Global Screen Sizes
+// Breakpoints
 //==========================================
 
+$screen--1340: new-breakpoint( max-width $screen-1340 12 );
+$screen--1200: new-breakpoint( max-width $screen-1200 12 );
+$screen--1023: new-breakpoint( max-width $screen-1023 6 );
+$screen--860: new-breakpoint( max-width $screen-860 4 );

@@ -1,118 +1,129 @@
+//
+// Color assignments
+//==========================================
 $white: #fff;
+$white-dark: #eee;
+$white-darker: #ddd;
 $black: #000;
+$gray-lighter: #999;
+$gray-light: #777;
+$gray: #666;
+$gray-dark: #333;
+$red: #c3251d;
+$camski-blue: #1E73BE;
 
 //
 // General
 //==========================================
-$link__color: #c3251d;
-$link__hoverColor: #333;
-$headings__TextColor: #666; /* SKIREV Anterior: No hi havia color; */
+$link--color: $red;
+$link--hover-color: $gray-dark;
+$headings--text-color: $gray; /* SKIREV Anterior: No hi havia color; */
 
 //
 // Elements
 //==========================================
-$body__backgroundColor: url("images/main_bg.png") repeat;
-$base__TextColor: #333;
+$body--background-color: url("images/main_bg.png") repeat;
+$base--text-color: $gray-dark;
 
-$galleryImage__BorderColor: #eee;
-$galleryImage__Hover__BorderColor: #999;
+$gallery-image--border-color: $white-dark;
+$gallery-image--hover-border-color: $gray-lighter;
 
 //
 // Form Elements
 //==========================================
-$searchInput__BackgroundColor: $white;
-$searchInput__TextColor: #333;
+$search-input--background-color: $white;
+$search-input--text-color: $gray-dark;
 
-$input__BackgroundColor: $white;
-$inputBorder__Color: #ddd;
-$inputBorder__FocusColor: #999;
-$input__TextColor: #333;
+$input--background-color: $white;
+$input--border-color: $white-darker;
+$input--border-focus-color: $gray-lighter;
+$input--text-color: $gray-dark;
 
-$button__BackgroundColor: #333;
-$button__Hover__BackgroundColor: #c3251d;
-$button__TextColor: $white;
-$button__Hover__TextColor: $white;
-$button__Disabled__BackgroundColor: #eee;
-$button__Disabled__TextColor: #777;
+$button--background-color: $gray-dark;
+$button--hover-background-color: $red;
+$button--text-color: $white;
+$button--text-hover-color: $white;
+$button--disabled-background-color: $white-dark;
+$button--disabled-text-color: $gray-light;
 
 //
 // Header
 //==========================================
-$siteHeader__BackgroundColor: #1E73BE;
-$siteTitle__LinkTextColor: #333;
+$site-header--background-color: $camski-blue;
+$site-title--link-text-color: $gray-dark;
 
 //
 // Navigation
 //==========================================
-$nav__LinkColor: #333;
-$nav__HoverColor: #c3251d;
-$submenu__LinkBackgroundColor: $white;
-$submenu__BorderColor: #eee;
+$nav--link-color: $gray-dark;
+$nav--link-hover-color: $red;
+$submenu--link-background-color: $white;
+$submenu--border-color: $white-dark;
 
-$primaryNav__BackgroundColor: #1E73BE;
-$primaryNav__LinkColor: $nav__LinkColor;
-$primaryNav__BorderColor: #eee;
+$primary-nav--background-color: $camski-blue;
+$primary-nav--link-color: $nav--link-color;
+$primary-nav--border-color: $white-dark;
 
-$secondaryNav__BackgroundColor: $white;
-$secondaryNav__LinkColor: $nav__LinkColor;
-$secondaryNav__BorderColor: #eee;
+$secondary-nav--background-color: $white;
+$secondary-nav--link-color: $nav--link-color;
+$secondary-nav--border-color: $white-dark;
 
-$jsNav__BackgroundColor: $white;
-$jsNav__HoverLinkColor: $black;
-$jsNav__FocusLinkColor: #c3251d;
+$js-nav--background-color: $white;
+$js-nav--hover-link-color: $black;
+$js-nav--focus-link-color: $red;
 
-$navToggle__BackgroundColor: $white;
-$navToggle__TextColor: #333;
+$nav-toggle--background-color: $white;
+$nav-toggle--text-color: $gray-dark;
 
-$archivePagination__BackgroundColor: $white;
-$archivePagination__TextColor: #333;
-$archivePagination__HoverBackgroundColor: #c3251d;
-$archivePagination__HoverTextColor: $white;
+$archive-pagination--background-color: $white;
+$archive-pagination--text-color: $gray-dark;
+$archive-pagination--hover-background-color: $red;
+$archive-pagination--hover-text-color: $white;
 
 //
 // Site Footer
 //==========================================
-$siteFooter__BackgroundColor: linear-gradient(top, #ffffff, #b5b5b5);
-$siteFooter__BorderColor: #eee;
-$footerWidgets__BackgroundColor: $white;
+$site-footer--background-color: linear-gradient(top, #ffffff, #b5b5b5);
+$site-footer--border-color: $white-dark;
+$footer-widgets--background-color: $white;
 
 //
 // Entry Content
 //==========================================
-$entryFooter__Meta__BorderColor: #eee;
-$entry__BackgroundColor: $white;
-$entryHeader__BackgroundColor: $white;
-$entryHeader__Background: linear-gradient(top, #ffffff, #f6f6f6);
-$entryTitle__LinkColor: #333;
-$entryTitle__HoverColor: #c3251d;
-$entryContent__Code__BackgroundColor: #333;
-$entryContent__Code__TextColor: #eee;
+$entry-footer__meta--border-color: $white-dark;
+$entry--background-color: $white;
+$entry-header--background-color: $white;
+$entry-header--background: linear-gradient(top, #ffffff, #f6f6f6);
+$entry-title--link-color: $gray-dark;
+$entry-title--hover-color: $red;
+$entry-content__code--background-color: $gray-dark;
+$entry-content__code--text-color: $white-dark;
 
 //
 // Comments
 //==========================================
-$comment__BackgroundColor: $white;
+$comment--background-color: $white;
 
 //
 // Widgets
 //==========================================
-$widgetTitle__LinkColor: #333;
+$widget-title--link-color: $gray-dark;
 
 //
 // Plugins
 //==========================================
-$enewsWidget__Background__Color: #333;
-$enewsWidget__WidgetTitle__TextColor: $white;
-$enewsWidget__input__BorderColor: #333;
-$enews__SubmitButton__BackgroundColor: #c3251d;
-$enews__SubmitButton__TextColor: $white;
-$enews__SubmitButton__BackgroundHoverColor: $white;
-$enews__SubmitButtonHover__TextColor: #333;
+$enews-widget--background-color: $gray-dark;
+$enews-widget__widget-title--text-color: $white;
+$enews-widget__input--border-color: $gray-dark;
+$enews__submit-button--background-color: $red;
+$enews__submit-button--text-color: $white;
+$enews__submit-button--background-hover-color: $white;
+$enews__submit-button--hover-text-color: $gray-dark;
 
 //
 // General Components
 //==========================================
-$breadcrumbs__BackgroundColor: $white;
-$authorBox__BackgroundColor: $white;
-$afterEntry__BackgroundColor: $white;
-$archiveDescription__BackgroundColor: $white;
+$breadcrumbs--background-color: $white;
+$author-box--background-color: $white;
+$after-entry--background-color: $white;
+$archive-description--background-color: $white;

@@ -1,95 +1,95 @@
 //
 // Fonts
 //==========================================
-$fontFamily__SourceSansPro: 'Source Sans Pro', sans-serif;
-$fontFamily__Lato: Lato, sans-serif;
+$font-family--source-sans-pro: 'Source Sans Pro', sans-serif;
+$font-family--lato: Lato, sans-serif;
 
 //
 // Base Defaults
 //==========================================
-$html__FontSize: 62.5%;
-$base__FontFamily: $fontFamily__Lato;
-$base__FontSize: 14;
-$base__FontSize__860: 18;
-$baseDiv__FontSize: 1.4rem;/* SKIREV Anterior: 2rem; */
-$baseDiv__FontSize__860: 1.8rem;
-$base__LineHeight: 1.625;
+$html--font-size: 62.5%;
+$base--font-family: $font-family--lato;
+$base--font-size: 14;
+$base--font-size--860: 18;
+$base__div--font-size: 1.4rem;/* SKIREV Anterior: 2rem; */
+$base__div--font-size--860: 1.8rem;
+$base--line-height: 1.625;
 
 //
 // Headings
 //==========================================
-$headings__FontFamily: 'Droid Sans', Lato, sans-serif; /* SKIREV Anterior: font-family: 'Source Sans Pro', sans-serif; */
-$headings__LineHeight: 1.2;
+$headings--font-family: 'Droid Sans', Lato, sans-serif; /* SKIREV Anterior: font-family: 'Source Sans Pro', sans-serif; */
+$headings--line-height: 1.2;
 
-$h1__FontSize: 21; /* SKIREV Anterior: 36px; */
-$h2__FontSize: 30; /* SKIREV Anterior: 30px; */
-$h3__FontSize: 24; /* SKIREV Anterior: 24px; */
-$h4__FontSize: 14; /* SKIREV Anterior: 20px; */
-$h5__FontSize: 18; /* SKIREV Anterior: 18px; */
-$h6__FontSize: 16; /* SKIREV Anterior: 16px; */
+$h1--font-size: 21; /* SKIREV Anterior: 36px; */
+$h2--font-size: 30; /* SKIREV Anterior: 30px; */
+$h3--font-size: 24; /* SKIREV Anterior: 24px; */
+$h4--font-size: 14; /* SKIREV Anterior: 20px; */
+$h5--font-size: 18; /* SKIREV Anterior: 18px; */
+$h6--font-size: 16; /* SKIREV Anterior: 16px; */
 
 //
 // Elements
 //==========================================
-$blockquote__FontSize: 30;
-$input__FontSize: 18;
+$blockquote--font-size: 30;
+$input--font-size: 18;
 
 //
 // Form Elements
 //==========================================
-$button__FontSize: 16;
+$button--font-size: 16;
 
 //
 // Header
 //==========================================
-$siteTitle__FontSize: 30;
-$siteDescription__FontSize: 16;
+$site-title--font-size: 30;
+$site-description--font-size: 16;
 
 //
 // Navigation
 //==========================================
-$nav__FontSize: 16;
-$submenu__FontSize: 14;
-$primaryNav__FontSize: 14;
+$nav--font-size: 16;
+$submenu--font-size: 14;
+$primary-nav--font-size: 14;
 
 //
 // Footer
 //==========================================
-$siteFooter__FontSize: 16;
-$footerWidgets__FontSize: 18;
+$site-footer--font-size: 16;
+$footer-widgets--font-size: 18;
 
 //
 // Entry Content
 //==========================================
-$entryTitle__FontSize: 26;
+$entry-title--font-size: 26;
 
-$entryMeta__HeaderFontSize: 16;
-$entryMeta__FooterFontSize: 16;
+$entry-header__entry-meta--font-size: 16;
+$entry-footer__entry-meta--font-size: 16;
 
-$archivePagination__FontSize: 16;
+$archive-pagination--font-size: 16;
 
 //
 // Comments
 //==========================================
-$comments__FontSize: 16;
+$comments--font-size: 16;
 
 //
 // Widgets
 //==========================================
-$widgetTitle__FontSize: 18;
-$featuredContent__EntryTitle__FontSize: 20;
+$widget-title--font-size: 18;
+$featured-content__entry-title--font-size: 20;
 
 //
 // Plugins
 //==========================================
-$enews__FontSize: 16;
+$enews--font-size: 16;
 
 //
 // General Components
 //==========================================
-$breadcrumbs__FontSize: 16;
-$authorBox__FontSize: 18;
-$authorBox__Title__FontSize: 26; /* CAMSKI -> Original: 20px */
-$afterEntry__FontSize: 18;
-$archive__Title__FontSize: 26; /* CAMSKI -> Original: 20px */
-$archiveDescription__FontSize: 18;
+$breadcrumbs--font-size: 16;
+$author-box--font-size: 18;
+$author-box__title--font-size: 26; /* CAMSKI -> Original: 20px */
+$after-entry--font-size: 18;
+$archive-title--font-size: 26; /* CAMSKI -> Original: 20px */
+$archive-description--font-size: 18;

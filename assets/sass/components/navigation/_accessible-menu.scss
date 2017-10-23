@@ -21,11 +21,11 @@
     display: none;
     visibility: hidden;
 
-    @media only screen and (max-width: 1023px) {
+    @include media( $screen--1023 ) {
 
         border-width: 0;
-        background-color: $navToggle__BackgroundColor;
-        color: $navToggle__TextColor;
+        background-color: $nav-toggle--background-color;
+        color: $nav-toggle--text-color;
         display: block;
         margin: 0 auto;
         overflow: hidden;
@@ -36,7 +36,7 @@
 
 }
 
-@media only screen and (max-width: 1023px) {
+@include media( $screen--1023 ) {
 
     .sub-menu-toggle {
 

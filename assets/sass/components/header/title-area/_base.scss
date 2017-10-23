@@ -7,9 +7,9 @@
     float: left;
     padding: 10px 0;
     /* SKIREV width: 360px; */
-    width: $title_Area__Width;
+    width: $title-area--width;
 
-    @media only screen and (max-width: 1023px) {
+    @include media( $screen--1023 ) {
 
         width: 100%;
         text-align: center;
@@ -23,7 +23,7 @@
 
 }
 
-@media only screen and (max-width: 1023px) {
+@include media( $screen--1023 ) {
 
     .site-description,
     .site-header .title-area,

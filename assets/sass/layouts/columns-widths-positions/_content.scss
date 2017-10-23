@@ -3,15 +3,15 @@
 .content {
 
     float: right;
-    width: $content__Width;
+    width: $content--width;
 
     /* CAMERASKI -> NOT */
-    @media only screen and (max-width: $_1340) {
-        width: $content__1340__Width;
+    @include media( $screen--1340 ) {
+        width: $content--width--1340;
     }
 
-    @media only screen and (max-width: 1200px) {
-        width: $content__1200__Width;
+    @include media( $screen--1200 ) {
+        width: $content--width--1200;
     }
     /* / CAMERASKI -> NOT */
 
@@ -19,15 +19,15 @@
     .sidebar-content-sidebar &,
     .sidebar-sidebar-content & {
 
-        width: $contentBothSidebars__Width;
+        width: $content-both-sidebars--width;
 
         /* CAMERASKI -> NOT */
-        @media only screen and (max-width: $_1340) {
-            width: $contentBothSidebars__1340__Width;
+        @include media( $screen--1340 ) {
+            width: $content-both-sidebars--width--1340;
         }
 
-        @media only screen and (max-width: $_1200) {
-            width: $contentBothSidebars__1200__Width;
+        @include media( $screen--1200 ) {
+            width: $content-both-sidebars--width--1200;
         }
         /* / CAMERASKI -> NOT */
 

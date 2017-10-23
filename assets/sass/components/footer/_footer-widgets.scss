@@ -3,8 +3,8 @@
 
 .footer-widgets {
 
-    background-color: $footerWidgets__BackgroundColor;
-    font-size: rem( $footerWidgets__FontSize );
+    background-color: $footer-widgets--background-color;
+    font-size: rem( $footer-widgets--font-size );
     clear: both;
     padding: 60px 0;
 
@@ -14,23 +14,23 @@
 .footer-widgets-2,
 .footer-widgets-3 {
 
-    width: $footerWidgets__Width;
+    width: $footer-widgets--width;
 
-    @media only screen and (max-width: 1340px) {
+    @include media( $screen--1340 ) {
 
-        width: $footerWidgets__Width_1340;
-
-    }
-
-    @media only screen and (max-width: 1200px) {
-
-        width: $footerWidgets__Width_1200;
+        width: $footer-widgets--width--1340;
 
     }
 
-    @media only screen and (max-width: 1023px) {
+    @include media( $screen--1200 ) {
 
-        width: $footerWidgets__Width_1023;
+        width: $footer-widgets--width--1200;
+
+    }
+
+    @include media( $screen--1023 ) {
+
+        width: $footer-widgets--width--1023;
 
     }
 
@@ -40,13 +40,13 @@
 
     margin-right: 70px;
 
-    @media only screen and (max-width: 1340px) {
+    @include media( $screen--1340 ) {
 
         margin-right: 60px;
 
     }
 
-    @media only screen and (max-width: 1200px) {
+    @include media( $screen--1200 ) {
 
         margin-right: 30px;
 
@@ -59,7 +59,7 @@
 
     float: left;
 
-    @media only screen and (max-width: 1023px) {
+    @include media( $screen--1023 ) {
 
         margin: 0 auto 40px;
 

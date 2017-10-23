@@ -3,11 +3,11 @@
 .sidebar-primary {
 
     float: right;
-    width: $primarySidebar__Width;
+    width: $primary-sidebar--width;
 
-    @media only screen and (max-width: $_1340) {
+    @include media( $screen--1340 ) {
 
-        width: $primarySidebar__1340__Width;
+        width: $primary-sidebar--width--1340;
 
     }
 

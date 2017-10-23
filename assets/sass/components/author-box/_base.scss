@@ -1,11 +1,11 @@
 .author-box {
 
-    background-color: $authorBox__BackgroundColor;
-    font-size: rem( $authorBox__FontSize );
+    background-color: $author-box--background-color;
+    font-size: rem( $author-box--font-size );
     margin: 10px 0;
     padding: 10px 10px 10px 20px;
 
-    @media only screen and (max-width: $_860) {
+    @include media( $screen--860 ) {
         padding: 30px;
         margin-bottom: 5%;
     }
@@ -17,6 +17,6 @@
 }
 
 .author-box-title {
-    font-size: rem( $authorBox__Title__FontSize );
+    font-size: rem( $author-box__title--font-size );
     font-weight: bold; /* CAMSKI */
 }

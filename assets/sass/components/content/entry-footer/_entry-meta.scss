@@ -6,11 +6,11 @@
 
     .entry-meta {
 
-        border-top: 1px solid $entryFooter__Meta__BorderColor;
+        border-top: 1px solid $entry-footer__meta--border-color;
         padding-top: 24px;
 
         p {
-            font-size: rem( $entryMeta__FooterFontSize );
+            font-size: rem( $entry-footer__entry-meta--font-size );
             margin-bottom: 0;
         }
 

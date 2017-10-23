@@ -8,11 +8,11 @@
 
 .entry {
 
-    background-color: $entry__BackgroundColor;
+    background-color: $entry--background-color;
     margin-bottom: 0;
     padding: 5px 10px;
 
-    @media only screen and (max-width: 860px) {
+    @include media( $screen--860 ) {
 
         padding: 30px;
         margin-bottom: 5%;
