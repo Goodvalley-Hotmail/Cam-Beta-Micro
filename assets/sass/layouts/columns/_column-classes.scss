@@ -9,7 +9,7 @@
 .four-fifths,
 .five-fifths {
     background:#ffffff;
-    background: linear-gradient(top, #ffffff, #f6f6f6);
+    background: $column-classes--background-color;
     border-bottom: 1px solid #d7d7d7;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     float: left;
@@ -49,18 +49,44 @@
 }
 
 .one-fifth {
-    /*width: 19.333333333333%;*/
+
     width: 27.333333333333%;
+
+    @include media( $screen--1220 ) {
+        width: 49.583333333333%;
+    }
+
 }
 
 .two-fifths {
-    /*width: 39.5%;*/
+
+    text-align: center;
     width: 35.5%;
+
+    @include media( $screen--1220 ) {
+        width: 49.583333333333%;
+    }
+
 }
 
 .three-fifths {
-    /*width: 39.5%;/* SKIREV Anterior: 59.666666666667% */
+
     width: 35.5%;/* SKIREV Anterior: 59.666666666667% */
+
+    @include media( $screen--1220 ) {
+        background: none;
+        border-bottom: none;
+        box-shadow: none;
+        float: left;
+        background-color: url("images/main_bg.png") repeat;
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
 }
 
 /*.four-fifths {
@@ -82,4 +108,44 @@
 
 .first-2 {
     margin-left: 0;
+}
+
+@include media( $screen--1220 ) {
+
+    .four-fifths,
+    .five-fifths	{
+        background:#ffffff;
+        background: $column-classes--background-color;
+        border-bottom: 1px solid #d7d7d7;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        float: left;
+        width: 49.583333333333%;
+    }
+
+    .five-fifths {
+        float: left;
+        margin-left: 0.83333333333333%;
+    }
+
+}
+
+@include media( $screen--960 ) {
+
+    .one-half {
+        margin: 0;
+        width: 100%;
+    }
+
+}
+
+@include media( $screen--800 ) {
+
+    .one-fifth,
+    .two-fifths,
+    .four-fifths,
+    .five-fifths {
+        margin-left: 0;
+        width: 100%;
+    }
+
 }

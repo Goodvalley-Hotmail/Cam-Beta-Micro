@@ -80,6 +80,10 @@ $archive-pagination--text-color: $gray-dark;
 $archive-pagination--hover-background-color: $red;
 $archive-pagination--hover-text-color: $white;
 
+// Responsive Menu
+$menu-primary__responsive-menu-icon--text-color: $white;
+$responsive-menu--text-color: $white;
+
 //
 // Site Footer
 //==========================================
@@ -127,3 +131,57 @@ $breadcrumbs--background-color: $white;
 $author-box--background-color: $white;
 $after-entry--background-color: $white;
 $archive-description--background-color: $white;
+
+//
+// Ski Resorts Overview
+//==========================================
+$column-classes--background-color: @include linear-gradient( top, #ffffff, #f6f6f6 );
+
+$main-webcam-title--background-color: #1E73BE;
+$main-webcam-title--border-color: #1E73BE;
+$main-webcam-title--text-color: $white;
+
+$season--border-bottom-color: #d7d7d7;
+
+$operating-status-open--background-color: #008000;
+$operating-status-open--border-color: #ff0000;
+$operating-status-open--text-color: $white;
+$operating-status-closed--background-color: #ff0000;
+$operating-status-closed--border-color: #ff0000;
+$operating-status-closed--text-color: $white;
+
+$today-title--text-color: #1E73BE;
+
+$slopes-green--text-color: green;
+$slopes-blue--text-color: blue;
+$slopes-red--text-color: red;
+$slopes-black--text-color: $black;
+$ski-routes--text-color: orange;
+$nordic-tracks--text-color: #9C9EA0;
+
+$snow-report--link-background-color: $black;
+$snow-report--link-text-color: #$white;
+$snow-report--link-border-color: $black;
+
+$slopes-total--background-color: $black;
+$slopes-total--border-color: $black;
+$slopes-total--text-color: $white;
+
+$lift-icons--border-color: $black;
+$lift-totals--border-top-color: #d7d7d7;
+
+$see-all-prices--background-color: #1E73BE;
+$see-all-prices--border-color: #1E73BE;
+$see-all-prices--text-color: $white;
+
+$meteo-container--text-color: $black;
+
+
+//
+// WebCam
+//==========================================
+
+
+//
+// Meteo Weather
+//==========================================

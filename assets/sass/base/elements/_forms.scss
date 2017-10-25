@@ -35,6 +35,16 @@ input[type="radio"] {
     color: #333;
 }
 
+// CAMERASKI ----------------------------------------------------------- */
+
+// To clear search input field's text when the search field gets focus
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+// / CAMERASKI --------------------------------------------------------- */
+
 button,
 input[type="button"],
 input[type="reset"],
