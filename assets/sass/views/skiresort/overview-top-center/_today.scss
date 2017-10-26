@@ -4,7 +4,7 @@
 
         & p.today {
             color: $today-title--text-color;
-            font-size: rem($today-title--font-size);
+            @include rem( font-size, $today-title--font-size );
             margin: 5px 0;
             text-align: center;
         }
@@ -15,7 +15,7 @@
         & li.snow-depth,
         & li.snow-type {
 
-            font-size: rem($today-data--font-size);
+            @include rem( font-size, $today-data--font-size );
             margin: 0 0 0 10px;
             text-align: left;
 

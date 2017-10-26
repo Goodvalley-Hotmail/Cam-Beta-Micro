@@ -4,7 +4,7 @@
     line-height: $elevation--line-height;
     margin: 0 0 5px 10px;
     text-align: left;
-    font-size: rem( $elevation--font-size );
+    @include rem( font-size, $elevation--font-size );
     width: 50%;
 
     @include media( $screen--1220 ) {

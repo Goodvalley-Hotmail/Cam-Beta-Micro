@@ -1,11 +1,10 @@
 .sidebar {
 
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: $sidebar--font-size;
     margin-bottom: 40px;
 
     .widget {
-        background-color: #fff;
+        background-color: $widget--background-color;
         padding: 40px;
     }
 

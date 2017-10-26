@@ -3,7 +3,7 @@
     ul.overview-lifts,
     ul.overview-lift-totals {
         float: left;
-        font-size: rem( $lifts--font-size );
+        @include rem( font-size, $lifts--font-size );
         width: 100%;
     }
 

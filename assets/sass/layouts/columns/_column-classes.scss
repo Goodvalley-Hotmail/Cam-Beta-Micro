@@ -9,7 +9,7 @@
 .four-fifths,
 .five-fifths {
     background:#ffffff;
-    background: $column-classes--background-color;
+    background: linear-gradient(top, #ffffff, #f6f6f6);
     border-bottom: 1px solid #d7d7d7;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     float: left;
@@ -71,7 +71,7 @@
 
 .three-fifths {
 
-    width: 35.5%;/* SKIREV Anterior: 59.666666666667% */
+    width: 35.5%;// CAMERASKI Anterior: 59.666666666667%
 
     @include media( $screen--1220 ) {
         background: none;
@@ -89,9 +89,9 @@
 
 }
 
-/*.four-fifths {
-	width: 79.833333333333%;
-}*/
+//.four-fifths {
+//	width: 79.833333333333%;
+//}
 
 .one-sixth {
     width: 15.972222222222%;
@@ -115,7 +115,7 @@
     .four-fifths,
     .five-fifths	{
         background:#ffffff;
-        background: $column-classes--background-color;
+        background: linear-gradient(top, #ffffff, #f6f6f6);
         border-bottom: 1px solid #d7d7d7;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         float: left;

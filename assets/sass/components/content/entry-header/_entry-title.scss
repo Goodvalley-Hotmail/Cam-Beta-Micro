@@ -4,7 +4,7 @@
 
 .entry-title {
 
-    font-size: rem( $entry-title--font-size );
+    @include rem( font-size, $entry-title--font-size );
     font-weight: bold;
 
     a {

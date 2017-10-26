@@ -17,7 +17,7 @@ $camski-blue: #1E73BE;
 //==========================================
 $link--color: $red;
 $link--hover-color: $gray-dark;
-$headings--text-color: $gray; /* SKIREV Anterior: No hi havia color; */
+$headings--text-color: $gray; // CAMERASKI Anterior: No hi havia color;
 
 //
 // Elements
@@ -111,6 +111,7 @@ $comment--background-color: $white;
 //
 // Widgets
 //==========================================
+$widget--background-color: $white;
 $widget-title--link-color: $gray-dark;
 
 //
@@ -135,7 +136,7 @@ $archive-description--background-color: $white;
 //
 // Ski Resorts Overview
 //==========================================
-$column-classes--background-color: @include linear-gradient( top, #ffffff, #f6f6f6 );
+//$column-classes--background-color: @include linear-gradient(to top, #ffffff, #f6f6f6);
 
 $main-webcam-title--background-color: #1E73BE;
 $main-webcam-title--border-color: #1E73BE;
@@ -160,7 +161,7 @@ $ski-routes--text-color: orange;
 $nordic-tracks--text-color: #9C9EA0;
 
 $snow-report--link-background-color: $black;
-$snow-report--link-text-color: #$white;
+$snow-report--link-text-color: $white;
 $snow-report--link-border-color: $black;
 
 $slopes-total--background-color: $black;

@@ -1,9 +1,9 @@
 .ul-overview-elevation-narrow {
 
     display: none;
-    /*display: block;*/
+    //display: block;
     float: left;
-    font-size: rem( $elevation-narrow--font-size );
+    @include rem( font-size, $elevation-narrow--font-size );
     text-align: left;
     width:100%;
 

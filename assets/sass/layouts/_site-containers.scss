@@ -4,9 +4,9 @@
 .site-inner,
 .wrap {
     margin: 0 auto;
-    max-width: $max-width; /* SKIREV Anterior: max-width: 1280px; */
+    max-width: $max-width; // CAMERASKI Anterior: max-width: 1280px;
 
-    /* CAMERASKI -> NOT */
+    // CAMERASKI -> NOT
     @include media( $screen--1340 ) {
 
         max-width: $max-width--1340;
@@ -24,30 +24,30 @@
         max-width: $max-width--1023;
 
     }
-    /* / CAMERASKI -> NOT */
+    // / CAMERASKI -> NOT
 
 }
 
 .site-inner {
 
     clear: both;
-    /* SKIREV */
+    // CAMERASKI
     max-width: none;
-    /* /SKIREV */
-    padding-top: 0; /* SKIREV Anterior: padding-top: 40px; */
+    // /CAMERASKI
+    padding-top: 0; // CAMERASKI Anterior: padding-top: 40px;
     word-wrap: break-word;
 
-    /* CAMERASKI -> NOT */
+    // CAMERASKI -> NOT
     @include media( $screen--860 ) {
 
         padding: 5% 5% 0;
 
     }
-    /* / CAMERASKI -> NOT */
+    // /CAMERASKI -> NOT
 
 }
 
-/* CAMERASKI -> NOT */
+// CAMERASKI -> NOT
 @include media( $screen--860 ) {
 
     .wrap {
@@ -56,14 +56,14 @@
     }
 
 }
-/* / CAMERASKI -> NOT */
+// / CAMERASKI -> NOT
 
-/* SKIREV Only for FrontPage */
+// CAMERASKI Only for FrontPage
 .home .site-inner {
     max-width: $max-width__home;
     padding-top: 0;
 }
-/* /SKIREV */
+// /CAMERASKI
 
 .landing-page .site-inner {
     max-width: $max-width__landing-page;

@@ -5,25 +5,25 @@
 .genesis-nav-menu {
 
     clear: both;
-    font-size: rem( $nav--font-size );
+    @include rem( font-size, $nav--font-size );
     font-weight: 600;
     line-height: 1;
     width: 100%;
 
-    /* CAMERASKI -> NOT */
+    // CAMERASKI -> NOT
     @include media( $screen--1023 ) {
 
         text-align: center;
 
         li,
-        .site-header ul.& {
+        .site-header ul & {
 
             float: none;
 
         }
 
     }
-    /* / CAMERASKI -> NOT */
+    // / CAMERASKI -> NOT
 
     .menu-item {
         display: inline-block;
@@ -61,7 +61,7 @@
             background-color: $submenu--link-background-color;
             border: 1px solid $submenu--border-color;
             border-top: 0;
-            font-size: rem( $submenu--font-size );
+            @include rem( font-size, $submenu--font-size );
             padding: 20px;
             position: relative;
             width: 200px;

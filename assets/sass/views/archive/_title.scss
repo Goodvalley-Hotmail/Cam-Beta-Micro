@@ -1,5 +1,5 @@
 .archive-description .entry-title,
 .archive-title {
-    font-size: rem( $archive-title--font-size );
-    font-weight: bold; /* CAMSKI */
+    @include rem( font-size, $archive-title--font-size );
+    font-weight: bold; // CAMERASKI
 }

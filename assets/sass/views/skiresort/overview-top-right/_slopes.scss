@@ -51,7 +51,7 @@
 
     ul.overview-slopes-colors li.overview-green {
         color: $slopes-green--text-color;
-        font-size: rem( $slopes-colors--font-size );
+        @include rem( font-size, $slopes-colors--font-size );
         text-align: right;
     }
 
@@ -64,7 +64,7 @@
     ul.ul-overview-other-slopes li.overview-ski-routes,
     ul.ul-overview-other-slopes li.overview-nordic-tracks {
 
-        font-size: rem( $slopes-colors--font-size );
+        @include rem( font-size, $slopes-colors--font-size );
         text-align: right;
 
         @include media( $screen--1220 ) {
@@ -131,7 +131,7 @@
 
 @-moz-document url-prefix() {
     span.double-diamond {
-        /*letter-spacing: -4px*/
+        //letter-spacing: -4px
     }
 }
 

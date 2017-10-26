@@ -4,7 +4,7 @@
 
         margin: 0 auto;
         max-width: $title-area--width;
-        padding: 10px 0; /* SKIREV Anterior: 0; */
+        padding: 10px 0; // CAMERASKI Anterior: 0;
 
         @include media( $screen--1023 ) {
 
@@ -25,7 +25,7 @@
     .site-description,
     .site-title {
         display: block;
-        /* SKIREV text-indent: -9999px; */
+        // CAMERASKI text-indent: -9999px;
         text-indent: 0;
     }
 

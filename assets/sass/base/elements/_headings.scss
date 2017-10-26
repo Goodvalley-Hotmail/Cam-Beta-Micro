@@ -9,42 +9,42 @@ h5,
 h6 {
     color: $headings--text-color;
     font-family: $headings--font-family;
-    font-weight: 400; /* SKIREV Anterior: 600; */
+    font-weight: 400;
     line-height: $headings--line-height;
 }
 
-/* CAMERASKI 2017-03-18 */
+// CAMERASKI
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 5px; /* SKIREV Anterior: 0 0 10px; */
+    margin: 0 0 5px;
 }
-/* / CAMERASKI 2017-03-18 */
+// / CAMERASKI
 
 h1 {
-    font-size:  rem( $h1--font-size );
-    margin: 0; /* CAMERASKI 2017-03-18 */
-    padding: 0 0 5px; /* CAMERASKI 2017-03-18 */
+    @include rem( font-size, $h1--font-size );
+    margin: 0;
+    padding: 0 0 5px;
 }
 
 h2 {
-    font-size: rem( $h2--font-size );
+    @include rem( font-size, $h2--font-size );
 }
 
 h3 {
-    font-size: rem( $h3--font-size );
+    @include rem( font-size, $h3--font-size );
 }
 
 h4 {
-    font-size: rem( $h4--font-size );
+    @include rem( font-size, $h4--font-size );
 }
 
 h5 {
-    font-size: rem( $h5--font-size );
+    @include rem( font-size, $h5--font-size );
 }
 
 h6 {
-    font-size: rem( $h6--font-size );
+    @include rem( font-size, $h6--font-size );
 }

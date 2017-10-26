@@ -10,7 +10,7 @@
         padding-top: 24px;
 
         p {
-            font-size: rem( $entry-footer__entry-meta--font-size );
+            @include rem( font-size, $entry-footer__entry-meta--font-size );
             margin-bottom: 0;
         }
 
