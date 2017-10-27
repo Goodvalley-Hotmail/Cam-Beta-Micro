@@ -34,7 +34,7 @@ function handleErrors() {
     notify.onError( {
         title:      'Task Failed [<%= error.message %>',
         message:    'See Console.',
-        sound:      'Sosumi' // See: https://github.com/mikaelbr/node-notifier#all-notification-options-
+        sound:      'Sosumi' // See: https://github.com/mikaelbr/node-notifier#all-notification-options-with-their-faults
     } ).apply( this, args );
 
     gutil.beep(); // Beep 'Sosumi' again.
@@ -45,9 +45,12 @@ function handleErrors() {
 }
 
 /***********************
- * All Tasks Listeners
+ * CSS Tasks
  **********************/
 
+/**
+ * PostCSS Task Handler
+ */
 gulp.task( 'postcss', function () {
 
     return gulp.src( 'assets/sass/style.scss' )
@@ -120,6 +123,10 @@ gulp.task( 'sass:lint', ['css:minify'], function () {
         .pipe( sassLint.failOnError() )
 
 } );
+
+/***********************
+ * All Tasks Listeners
+ **********************/
 
 gulp.task( 'watch', function () {
     gulp.watch( 'assets/sass/**/*.scss', ['styles'] );
